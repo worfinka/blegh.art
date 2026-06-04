@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blegh.art — скоро</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="status-badge">
+                <span class="dot"></span>
+                в разработке
+            </div>
+            
+            <h1>blegh<span>.art</span></h1>
+            
+            <div class="quote-card">
+                <div class="quote-icon">“</div>
+                <p class="quote-text" id="quote"></p>
+                <div class="quote-loader"></div>
+            </div>
+            
+            <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="progress-labels">
+                    <span>идея</span>
+                    <span>код</span>
+                    <span>магия</span>
+                    <span>скоро</span>
+                </div>
+            </div>
+            
+            <p class="message">
+                Сайт готовится к запуску.<br>
+                А пока — наслаждайтесь случайной строкой из наших любимых песен.
+            </p>
+            
+            <button class="refresh-btn" id="refreshBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 4v6h-6M1 20v-6h6" />
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+                </svg>
+                другая цитата
+            </button>
+            
+            <div class="footer">
+                <p>— скроемся под бит, пока тут тишина —</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="quotes.json" type="application/json" id="quotesData"></script>
+    <script src="script.js"></script>
+</body>
+</html>
