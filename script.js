@@ -1,5 +1,4 @@
 let quotesArray = [];
-let currentTimeout = null;
 
 async function loadQuotes() {
     try {
@@ -10,55 +9,29 @@ async function loadQuotes() {
     } catch (error) {
         console.error('Ошибка загрузки цитат:', error);
         quotesArray = [
-            "Сайт скоро откроется...",
-            "А пока добавьте цитаты в quotes.json",
-            "Формат: строка в массиве \"quotes\""
+            "We are the architects of our own destruction.",
+            "Lost forever, lost together."
         ];
         return false;
     }
 }
 
 function getRandomQuote() {
-    if (!quotesArray.length) return "Нет цитат :(";
+    if (!quotesArray.length) return "building something permanent.";
     return quotesArray[Math.floor(Math.random() * quotesArray.length)];
 }
 
 function displayQuote(quote) {
     const quoteElement = document.getElementById('quote');
     if (quoteElement) {
-        quoteElement.style.opacity = '0';
-        setTimeout(() => {
-            quoteElement.textContent = quote;
-            quoteElement.style.opacity = '1';
-        }, 150);
+        quoteElement.textContent = quote;
     }
-}
-
-function updateQuote() {
-    const quote = getRandomQuote();
-    displayQuote(quote);
 }
 
 async function init() {
     await loadQuotes();
-    
-    const loader = document.querySelector('.quote-loader');
-    const refreshBtn = document.getElementById('refreshBtn');
-    
-    if (refreshBtn) {
-        refreshBtn.addEventListener('click', () => {
-            updateQuote();
-            
-            if (loader) {
-                loader.style.display = 'block';
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 300);
-            }
-        });
-    }
-    
-    updateQuote();
+    const quote = getRandomQuote();
+    displayQuote(quote);
 }
 
 document.addEventListener('DOMContentLoaded', init);
