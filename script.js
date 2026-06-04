@@ -7,10 +7,10 @@ async function loadQuotes() {
         quotesArray = data.quotes;
         return true;
     } catch (error) {
-        console.error('Ошибка загрузки цитат:', error);
+        console.error('Failed to load quote:', error);
         quotesArray = [
             "We are the architects of our own destruction.",
-            "Lost forever, lost together."
+            "Lost forever // lost together."
         ];
         return false;
     }
