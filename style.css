@@ -142,6 +142,20 @@ h1 span {
     color: rgba(255, 255, 255, 0.25);
     text-align: left;
 }
+/* logo */
+.logo-container {
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+    max-width: 500px; /* максимальный размер на десктопе */
+}
+
 
 /* adaptive */
 @media (max-width: 550px) {
@@ -164,6 +178,14 @@ h1 span {
     .subhead {
         font-size: 0.7rem;
         letter-spacing: 1.5px;
+    }
+    .logo-image {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .logo-container {
+        padding: 0 5px;
     }
 }
 
