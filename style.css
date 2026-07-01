@@ -179,16 +179,19 @@ h1 span {
         font-size: 0.7rem;
         letter-spacing: 1.5px;
     }
-    .logo-image {
-        max-width: 100%;
-        width: 100%;
+    .logo-container {
+        padding: 0;
+        overflow: hidden;
     }
     
-    .logo-container {
-        padding: 0 5px;
+    .logo-image {
+        width: 100%;
+        max-width: 100%; /* заставляет подстроиться под экран */
+        height: auto;
+        object-fit: contain; /* сохраняет пропорции */
     }
-}
 
 .quote-text {
     opacity: 1;
+    }
 }
