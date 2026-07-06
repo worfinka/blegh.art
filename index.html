@@ -1,45 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>blegh.art</title>
-    <!-- Open Graph -->
+
+    <meta name="description"
+        content="A love-letter website dedicated to British metalcore band Architects.">
+
+    <!-- OpenGraph -->
+
     <meta property="og:title" content="blegh.art">
-    <meta property="og:description" content="A unique non-commercial website dedicated to British metalcore band Architects. Each album has its own page, story, and hidden references.">
-    <meta property="og:image" content="https://i.postimg.cc/J720jT5m/Blegh-art-Logo.png">
-    <meta property="og:url" content="https://blegh.art">
+    <meta property="og:description"
+        content="A love-letter website dedicated to British metalcore band Architects.">
+    <meta property="og:image" content="images/og-main.png">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="blegh.art">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="bg-overlay"></div>
-    
-    <div class="container">
-        <main>
-            <div class="logo-container">
-                <img src="logo.svg" alt="blegh.art logo" class="logo-image">
+
+<div class="page">
+
+<!-- ====================================================== -->
+<!-- HEADER -->
+<!-- ====================================================== -->
+
+<header class="top-header">
+
+    <a href="/" class="logo">
+        <img src="logo.svg" alt="blegh.art">
+    </a>
+
+    <h1 class="page-title">
+        . main page
+    </h1>
+
+    <p class="site-description">
+        A love-letter website
+        dedicated to British
+        metalcore band
+        <strong>Architects.</strong>
+    </p>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- MAIN -->
+<!-- ====================================================== -->
+
+<main>
+
+<section class="hero">
+
+    <!-- LEFT -->
+
+    <div class="hero-left">
+
+        <h2 class="today">
+
+            <span>Today is</span>
+
+            <strong id="today-date">
+                Loading...
+            </strong>
+
+        </h2>
+
+        <!-- NEWS -->
+
+        <article class="news-card" id="news-card">
+
+            <img
+                src="images/placeholder.jpg"
+                alt=""
+                class="news-image"
+                id="news-image">
+
+            <div class="news-content">
+
+                <p class="news-years" id="news-years">
+                    ...
+                </p>
+
+                <p class="news-description"
+                    id="news-description">
+
+                    Loading...
+
+                </p>
+
+                <div class="news-links"
+                    id="news-links">
+
+                </div>
+
             </div>
-            
-            <p class="subhead">also blegh.space ; blegh.online ; blegh.ru<br>~<br>CURRENTLY IN BUILD.</p>
-            
-            <div class="quote-block">
-                <span class="quote-mark">“</span>
-                <p class="quote-text" id="quote"></p>
-            </div>
-            
-            <div class="process-note">
-                <p>blegh.art : The original plan<br>~<br>I want to create a unique and enjoyable non-commercial website dedicated to my favorite band - Architects. Each album will have its own page, its own story, and therefore its own unique references and hidden materials. I need to find someone to help me - someone who can uncover references, secret content, or simply share everything they know about the band. I’m also planning to include a link to similar websites somewhere in the footer, in case my project inspires someone else...</p>
-            </div>
-            
-            <div class="footer-note">
-                <p>— @worfinka for contribution —</p>
-            </div>
-        </main>
+
+        </article>
+
+        <!-- RANDOM QUOTE -->
+
+        <section class="quote-block">
+
+            <span class="quote-mark">
+                “
+            </span>
+
+            <p
+                class="quote-text"
+                id="quote">
+            </p>
+
+        </section>
+
     </div>
-    
-    <script src="quotes.json" type="application/json" id="quotesData"></script>
-    <script src="script.js"></script>
+
+    <!-- RIGHT -->
+
+    <aside class="hero-right">
+
+        <nav>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#">
+                        Github
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Similar websites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        The original plan
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Credits
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- ALBUMS -->
+<!-- ====================================================== -->
+
+<section class="albums">
+
+    <div id="albums-container">
+
+        <!-- JS -->
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+
+© <span id="copyright-year"></span> blegh.art,
+unofficial fan project
+
+<br>
+
+All related materials belong to their respective owners.
+
+</p>
+
+</footer>
+
+</div>
+
+<!-- ====================================================== -->
+<!-- DATA -->
+<!-- ====================================================== -->
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
