@@ -1,0 +1,23 @@
+{
+    "events": [
+        {
+            "id": "test",
+
+            "type": "custom",
+
+            "date": "07-06",
+
+            "year": 2004,
+
+            "title": "Test Event",
+
+            "description": "This is a test event for the homepage. Replace it with a real anniversary later.",
+
+            "image": "additional/test.jpg",
+
+            "links": {
+                "blegh.art": "https://blegh.art"
+            }
+        }
+    ]
+}
