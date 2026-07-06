@@ -1,37 +1,291 @@
-let quotesArray = [];
+/* ============================================
+   blegh.art
+   Main Script
+============================================ */
+
+const albums = [
+    {
+        name: "Nightmares",
+        year: 2006,
+        slug: "nightmares"
+    },
+    {
+        name: "Ruin",
+        year: 2007,
+        slug: "ruin"
+    },
+    {
+        name: "Hollow Crown",
+        year: 2009,
+        slug: "hollowcrown"
+    },
+    {
+        name: "The Here And Now",
+        year: 2011,
+        slug: "thehereandnow"
+    },
+    {
+        name: "Daybreaker",
+        year: 2012,
+        slug: "daybreaker"
+    },
+    {
+        name: "Lost Forever // Lost Together",
+        year: 2014,
+        slug: "lostforever"
+    },
+    {
+        name: "All Our Gods Have Abandoned Us",
+        year: 2016,
+        slug: "allourgods"
+    },
+    {
+        name: "Holy Hell",
+        year: 2018,
+        slug: "holyhell",
+        highlight: true
+    },
+    {
+        name: "For Those That Wish To Exist",
+        year: 2021,
+        slug: "forthosethatwishtoexist"
+    },
+    {
+        name: "The Classic Symptoms Of A Broken Spirit",
+        year: 2022,
+        slug: "theclassicsymptoms"
+    },
+    {
+        name: "The Sky, The Earth & All Between",
+        year: 2025,
+        slug: "thesky"
+    }
+];
+
+
+/* ============================================
+   RANDOM QUOTE
+============================================ */
 
 async function loadQuotes() {
+
     try {
-        const response = await fetch('quotes.json?v=' + Date.now());
+
+        const response = await fetch("quotes.json");
         const data = await response.json();
-        quotesArray = data.quotes;
-        return true;
-    } catch (error) {
-        console.error('Failed to load quote:', error);
-        quotesArray = [
-            "We are the architects of our own destruction.",
-            "Lost forever // lost together."
-        ];
-        return false;
+
+        const random =
+            data.quotes[Math.floor(Math.random() * data.quotes.length)];
+
+        document.getElementById("quote").textContent = random;
+
     }
-}
 
-function getRandomQuote() {
-    if (!quotesArray.length) return "building something permanent.";
-    return quotesArray[Math.floor(Math.random() * quotesArray.length)];
-}
+    catch {
 
-function displayQuote(quote) {
-    const quoteElement = document.getElementById('quote');
-    if (quoteElement) {
-        quoteElement.textContent = quote;
+        document.getElementById("quote").textContent =
+            "We are the architects of our own destruction.";
+
     }
+
 }
 
-async function init() {
-    await loadQuotes();
-    const quote = getRandomQuote();
-    displayQuote(quote);
+
+/* ============================================
+   DATE
+============================================ */
+
+function getDaySuffix(day) {
+
+    if (day % 10 === 1 && day !== 11) return "st";
+    if (day % 10 === 2 && day !== 12) return "nd";
+    if (day % 10 === 3 && day !== 13) return "rd";
+
+    return "th";
+
 }
 
-document.addEventListener('DOMContentLoaded', init);
+
+function generateToday() {
+
+    const today = new Date();
+
+    const day = today.getDate();
+
+    const month = today.toLocaleString("en", {
+        month: "long"
+    });
+
+    const year = today.getFullYear();
+
+    document.getElementById("today-date").textContent =
+        `${day}${getDaySuffix(day)} ${month} ${year}`;
+
+    document.getElementById("copyright-year").textContent =
+        year;
+
+    return {
+
+        month:
+            String(today.getMonth() + 1).padStart(2, "0"),
+
+        day:
+            String(day).padStart(2, "0")
+
+    };
+
+}
+
+
+/* ============================================
+   NEWS
+============================================ */
+
+async function loadNews(today) {
+
+    try {
+
+        const response = await fetch("info.json");
+        const data = await response.json();
+
+        const events = data.events.filter(event => {
+
+            return event.date === `${today.month}-${today.day}`;
+
+        });
+
+        if (!events.length) {
+
+            showNoNews();
+            return;
+
+        }
+
+        const news =
+            events[Math.floor(Math.random() * events.length)];
+
+        renderNews(news);
+
+    }
+
+    catch {
+
+        showNoNews();
+
+    }
+
+}
+
+
+function showNoNews() {
+
+    document.getElementById("news-years").textContent = "";
+
+    document.getElementById("news-description").textContent =
+        "No anniversary today.";
+
+    document.getElementById("news-links").innerHTML = "";
+
+}
+
+
+function renderNews(news) {
+
+    const image = document.getElementById("news-image");
+
+    if (news.type === "custom") {
+
+        image.src = `images/${news.image}`;
+
+    } else {
+
+        image.src = `images/${news.album}.jpg`;
+
+    }
+
+    const yearsAgo =
+        new Date().getFullYear() - news.year;
+
+    document.getElementById("news-years").textContent =
+        `${yearsAgo} years ago`;
+
+    document.getElementById("news-description").textContent =
+        news.description;
+
+    const links = document.getElementById("news-links");
+
+    links.innerHTML = "";
+
+    if (!news.links) return;
+
+    Object.entries(news.links).forEach(link => {
+
+        const a = document.createElement("a");
+
+        a.href = link[1];
+
+        a.target = "_blank";
+
+        a.textContent = link[0];
+
+        links.appendChild(a);
+
+    });
+
+}
+
+
+/* ============================================
+   ALBUM LIST
+============================================ */
+
+function createAlbumList() {
+
+    const container =
+        document.getElementById("albums-container");
+
+    albums.forEach(album => {
+
+        const row = document.createElement("div");
+
+        row.className = "album-row";
+
+        const link = document.createElement("a");
+
+        link.href = `${album.slug}/`;
+
+        link.className = "album-link";
+
+        if (album.highlight) {
+
+            link.classList.add("highlight");
+
+        }
+
+        link.innerHTML =
+            `${album.name} <span class="album-year">: ${album.year}</span>`;
+
+        row.appendChild(link);
+
+        container.appendChild(row);
+
+    });
+
+}
+
+
+/* ============================================
+   INIT
+============================================ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const today = generateToday();
+
+    loadQuotes();
+
+    loadNews(today);
+
+    createAlbumList();
+
+});
