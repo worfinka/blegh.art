@@ -68,6 +68,7 @@ const albums = [
         color: "#94A7B6"
     }
 ];
+/* P.S. I know I have tracklist.json and I dont need that but my ass is too lazy to change the entire code */
 
 /* random quote */
 
@@ -94,7 +95,7 @@ async function loadQuotes() {
     catch {
 
         document.getElementById("quote").textContent =
-            "We are the architects of our own destruction.";
+            "BLEGH!!! (the line didn't load for some reason)";
 
         document.getElementById("quote-source").innerHTML = "";
 
@@ -103,7 +104,7 @@ async function loadQuotes() {
 }
 
 
-/* date */
+/* date (I hate this) */
 
 function getDaySuffix(day) {
 
@@ -147,7 +148,7 @@ function generateToday() {
 }
 
 
-/* news */
+/* news (I hate this even more) */
 
 async function loadNews(today) {
 
@@ -189,12 +190,9 @@ async function showNoNews() {
 
     const response = await fetch("tracklist.json");
     const data = await response.json();
-
     const trackAlbums = data.albums;
-
     const album =
         trackAlbums[Math.floor(Math.random() * albums.length)];
-
     const track =
         album.tracks[Math.floor(Math.random() * album.tracks.length)];
     const color =
