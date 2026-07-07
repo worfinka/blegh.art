@@ -199,7 +199,7 @@ function renderNews(news) {
 
     } else {
 
-        image.src = `images/${news.album}.jpg`;
+        image.src = `images/albums/${news.album}.jpg`;
 
     }
 
