@@ -4,58 +4,68 @@ const albums = [
     {
         name: "Nightmares",
         year: 2006,
-        slug: "nightmares"
+        slug: "nightmares",
+        color: "#EEA42B"
     },
     {
         name: "Ruin",
         year: 2007,
-        slug: "ruin"
+        slug: "ruin",
+        color: "#C6C982"
     },
     {
         name: "Hollow Crown",
         year: 2009,
-        slug: "hollowcrown"
+        slug: "hollowcrown",
+        color: "#C5B97D"
     },
     {
         name: "The Here And Now",
         year: 2011,
-        slug: "than"
+        slug: "than",
+        color: "#9DA192
     },
     {
         name: "Daybreaker",
         year: 2012,
-        slug: "daybreaker"
+        slug: "daybreaker",
+        color: "#EDEEDC"
     },
     {
         name: "Lost Forever // Lost Together",
         year: 2014,
-        slug: "lflt"
+        slug: "lflt",
+        color: "#808080"
     },
     {
         name: "All Our Gods Have Abandoned Us",
         year: 2016,
-        slug: "aoghau"
+        slug: "aoghau",
+        color: "#F8F8F8"
     },
     {
         name: "Holy Hell",
         year: 2018,
         slug: "holyhell",
-        highlight: true
+        color: "#9B9B9B"
     },
     {
         name: "For Those That Wish To Exist",
         year: 2021,
-        slug: "fttwte"
+        slug: "fttwte",
+        color: "#878C81"
     },
     {
         name: "The Classic Symptoms Of A Broken Spirit",
         year: 2022,
-        slug: "tcsoabs"
+        slug: "tcsoabs",
+        color: "#F6F5F0"
     },
     {
         name: "The Sky, The Earth & All Between",
         year: 2025,
-        slug: "tste&ab"
+        slug: "tste&ab",
+        color: "#94A7B6"
     }
 ];
 
