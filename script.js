@@ -182,7 +182,7 @@ async function showNoNews() {
         album.tracks[Math.floor(Math.random() * album.tracks.length)];
 
     document.getElementById("news-image").src =
-        `images/${album.id}.jpg`;
+        `images/albums/${album.id}.jpg`;
 
     document.getElementById("news-years").textContent =
         "No anniversary today.";
