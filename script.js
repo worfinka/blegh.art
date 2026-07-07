@@ -168,15 +168,29 @@ async function loadNews(today) {
 }
 
 
-function showNoNews() {
+async function showNoNews() {
 
-    document.getElementById("news-years").textContent = "";
+    const response = await fetch("tracklist.json");
+    const data = await response.json();
 
-    document.getElementById("news-description").textContent =
+    const albums = data.albums;
+
+    const album =
+        albums[Math.floor(Math.random() * albums.length)];
+
+    const track =
+        album.tracks[Math.floor(Math.random() * album.tracks.length)];
+
+    document.getElementById("news-image").src =
+        `images/${album.id}.jpg`;
+
+    document.getElementById("news-years").textContent =
         "No anniversary today.";
 
-    document.getElementById("news-links").innerHTML = "";
+    document.getElementById("news-description").innerHTML =
+        `But you should listen to <strong>${track}</strong> from <strong>${album.title}</strong>.`;
 
+    document.getElementById("news-links").innerHTML = "";
 }
 
 
