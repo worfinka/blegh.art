@@ -75,7 +75,6 @@ async function loadQuotes() {
             random.text;
 
         document.getElementById("quote-source").innerHTML = `
-            <div>A random qoute from</div>
             <div class="quote-track">${random.track}</div>
             <div class="quote-album">(${random.album})</div>
         `;
