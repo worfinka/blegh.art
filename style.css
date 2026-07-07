@@ -157,9 +157,18 @@ img{
 }
 
 .quote-block{
+    margin:10px 0 40px;
+}
+
+.quote-main{
     border-left:2px solid rgba(255,255,255,.6);
     padding-left:14px;
-    margin:10px 0 40px;
+    display:inline-block;
+}
+
+.quote-source{
+    margin-top:12px;
+    margin-left:16px;
 }
 
 .quote-mark{
