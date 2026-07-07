@@ -59,7 +59,6 @@ const albums = [
     }
 ];
 
-
 /* random quote */
 
 async function loadQuotes() {
@@ -72,7 +71,14 @@ async function loadQuotes() {
         const random =
             data.quotes[Math.floor(Math.random() * data.quotes.length)];
 
-        document.getElementById("quote").textContent = random;
+        document.getElementById("quote").textContent =
+            random.text;
+
+        document.getElementById("quote-source").innerHTML = `
+            <div>A random qoute from</div>
+            <div class="quote-track">${random.track}</div>
+            <div class="quote-album">(${random.album})</div>
+        `;
 
     }
 
@@ -80,6 +86,8 @@ async function loadQuotes() {
 
         document.getElementById("quote").textContent =
             "We are the architects of our own destruction.";
+
+        document.getElementById("quote-source").innerHTML = "";
 
     }
 
