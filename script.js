@@ -190,6 +190,19 @@ async function showNoNews() {
     document.getElementById("news-description").innerHTML =
         `But you should listen to <strong>${track}</strong> from <strong>${album.title}</strong>.`;
 
+    const links = document.getElementById("news-links");
+
+    const query = encodeURIComponent(`${track} Architects`);
+
+    links.innerHTML = `
+        <a href="https://open.spotify.com/search/${query}" target="_blank">
+            Spotify
+        </a>
+        <a href="https://www.youtube.com/results?search_query=${query}" target="_blank">
+            YouTube
+        </a>
+    `;
+
     document.getElementById("news-links").innerHTML = "";
 }
 
