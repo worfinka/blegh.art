@@ -286,6 +286,7 @@ function createAlbumList() {
         link.href = `${album.slug}/`;
 
         link.className = "album-link";
+        link.style.setProperty("--album-color", album.color);
 
         if (album.highlight) {
 
