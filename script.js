@@ -202,8 +202,6 @@ async function showNoNews() {
             YouTube
         </a>
     `;
-
-    document.getElementById("news-links").innerHTML = "";
 }
 
 
