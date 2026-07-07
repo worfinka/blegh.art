@@ -5,9 +5,9 @@
 
             "type": "custom",
 
-            "date": "07-06",
+            "date": "07-07",
 
-            "year": 2004,
+            "year": 2007,
 
             "title": "Test Event",
 
@@ -16,7 +16,7 @@
             "image": "additional/black-logo.jpg",
 
             "links": {
-                "blegh.art": "https://blegh.art"
+                "us": "https://blegh.art"
             }
         }
     ]
