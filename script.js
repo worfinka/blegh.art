@@ -23,7 +23,7 @@ const albums = [
         name: "The Here And Now",
         year: 2011,
         slug: "than",
-        color: "#9DA192
+        color: "#9DA192"
     },
     {
         name: "Daybreaker",
