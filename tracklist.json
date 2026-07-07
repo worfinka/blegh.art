@@ -1,0 +1,213 @@
+{
+  "albums": [
+    {
+      "id": "nightmares",
+      "title": "Nightmares",
+      "year": 2006,
+      "tracks": [
+        "The Darkest Tomb",
+        "Broken Clocks",
+        "You Don't Walk Away From Dismemberment",
+        "Mine",
+        "They'll Be Hanging Us Tonight",
+        "This Confession Means Nothing",
+        "In The Desert",
+        "A Portrait For The Deceased",
+        "The Darkest Tomb (Reprise)"
+      ]
+    },
+
+    {
+      "id": "ruin",
+      "title": "Ruin",
+      "year": 2007,
+      "tracks": [
+        "Buried At Sea",
+        "Hunt Them Down",
+        "You'll Find Safety",
+        "Always",
+        "Sail This Ship Alone",
+        "Heartless",
+        "North Lane",
+        "Waste Away",
+        "Low",
+        "Running From The Sun"
+      ]
+    },
+
+    {
+      "id": "hollowcrown",
+      "title": "Hollow Crown",
+      "year": 2009,
+      "tracks": [
+        "Early Grave",
+        "Dethroned",
+        "Numbers Count For Nothing",
+        "Follow The Water",
+        "In Elegance",
+        "We're All Alone",
+        "Borrowed Time",
+        "Every Last Breath",
+        "One Of These Days",
+        "Dead March",
+        "Left With A Last Minute"
+      ]
+    },
+
+    {
+      "id": "thehereandnow",
+      "title": "The Here And Now",
+      "year": 2011,
+      "tracks": [
+        "Day In Day Out",
+        "Learn To Live",
+        "Delete, Rewind",
+        "BTN",
+        "An Open Letter To Myself",
+        "The Blues",
+        "Red Eyes",
+        "Stay Young Forever",
+        "Heartburn",
+        "Year In Year Out / Up And Away"
+      ]
+    },
+
+    {
+      "id": "daybreaker",
+      "title": "Daybreaker",
+      "year": 2012,
+      "tracks": [
+        "The Bitter End",
+        "Alpha Omega",
+        "These Colours Don't Run",
+        "Daybreak",
+        "Truth, Be Told",
+        "Even If You Win, You're Still A Rat",
+        "Outsider Heart",
+        "Behind The Throne",
+        "Devil's Island",
+        "Feather Of Lead",
+        "Unbeliever"
+      ]
+    },
+
+    {
+      "id": "lostforever",
+      "title": "Lost Forever // Lost Together",
+      "year": 2014,
+      "tracks": [
+        "Gravedigger",
+        "Naysayer",
+        "Broken Cross",
+        "The Devil Is Near",
+        "Dead Man Talking",
+        "Red Hypergiant",
+        "C.A.N.C.E.R.",
+        "Colony Collapse",
+        "Castles In The Air",
+        "Youth Is Wasted On The Young",
+        "The Distant Blue"
+      ]
+    },
+
+    {
+      "id": "allourgods",
+      "title": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "tracks": [
+        "Nihilist",
+        "Deathwish",
+        "Phantom Fear",
+        "Downfall",
+        "Gone With The Wind",
+        "The Empty Hourglass",
+        "A Match Made In Heaven",
+        "Gravity",
+        "All Love Is Lost",
+        "From The Wilderness",
+        "Moments In Oblivion"
+      ]
+    },
+
+    {
+      "id": "holyhell",
+      "title": "Holy Hell",
+      "year": 2018,
+      "tracks": [
+        "Death Is Not Defeat",
+        "Hereafter",
+        "Mortal After All",
+        "Holy Hell",
+        "Damnation",
+        "Royal Beggars",
+        "Modern Misery",
+        "Dying To Heal",
+        "The Seventh Circle",
+        "Doomsday",
+        "A Wasted Hymn"
+      ]
+    },
+
+    {
+      "id": "forthosethatwishtoexist",
+      "title": "For Those That Wish To Exist",
+      "year": 2021,
+      "tracks": [
+        "Do You Dream Of Armageddon?",
+        "Black Lungs",
+        "Giving Blood",
+        "Discourse Is Dead",
+        "Dead Butterflies",
+        "An Ordinary Extinction",
+        "Impermanence",
+        "Flight Without Feathers",
+        "Little Wonder",
+        "Animals",
+        "Libertine",
+        "Goliath",
+        "Demi God",
+        "Meteor",
+        "Dying Is Absolutely Safe"
+      ]
+    },
+
+    {
+      "id": "theclassicsymptoms",
+      "title": "The Classic Symptoms Of A Broken Spirit",
+      "year": 2022,
+      "tracks": [
+        "Deep Fake",
+        "Tear Gas",
+        "Spit The Bone",
+        "Burn Down My House",
+        "Living Is Killing Us",
+        "When We Were Young",
+        "Doomscrolling",
+        "Born Again Pessimist",
+        "A New Moral Low Ground",
+        "All The Love In The World",
+        "Be Very Afraid"
+      ]
+    },
+
+    {
+      "id": "thesky",
+      "title": "The Sky, The Earth & All Between",
+      "year": 2025,
+      "tracks": [
+        "Elegy",
+        "Whiplash",
+        "Blackhole",
+        "Everything Ends",
+        "Brain Dead",
+        "Evil Eyes",
+        "Landmines",
+        "Judgement Day",
+        "Broken Mirror",
+        "Curse",
+        "Seeing Red",
+        "Chandelier"
+      ]
+    }
+  ]
+}
