@@ -1,23 +1,34 @@
 {
     "events": [
         {
-            "id": "test",
-
-            "type": "custom",
-
-            "date": "07-08",
-
-            "year": 2007,
-
-            "title": "Test Event",
-
-            "description": "This is a test event for the homepage. Replace it with a real anniversary later.",
-
-            "image": "additional/black-logo.jpg",
-
+            "id": "nightmares",
+            "type": "album",
+            "date": "05-15",
+            "year": 2006,
+            "title": "Nightmares",
+            "description": "Their debut studio album was released. It was produced by the band themselves and Karl Bareham. ",
+            "image": "albums/nightmares.jpg",
             "links": {
-                "us": "https://blegh.art"
-            }
+                "wiki": "https://en.wikipedia.org/wiki/Nightmares_(Architects_album)",
+                "spotify": "https://open.spotify.com/album/462K1ZY7jqrP902HdYjpfh",
+                "youtube": "https://youtube.com/playlist?list=OLAK5uy_leRpZULksEvN1FBGnISgOx1kedclnvBPk"
+            },
+            "album": "nightmares"
+        },
+        {
+            "id": "ruin",
+            "type": "album",
+            "date": "10-25",
+            "year": 2007,
+            "title": "Ruin",
+            "description": "Architects released their second album. It was produced by John Mitchell, Ben Humphreys and the band themselves. It is the first album to feature vocalist Sam Carter and bassist Alex Dean.",
+            "image": "",
+            "links": {
+                "wiki": "https://en.wikipedia.org/wiki/Ruin_(album)",
+                "spotify": "https://open.spotify.com/album/1cLiIO6EQCUsYQSzxbXCnY",
+                "youtube": "https://youtube.com/playlist?list=OLAK5uy_nHBRmR8eLQM_sW59UZK0ieFteop_P1ESU"
+            },
+            "album": "ruin"
         }
     ]
 }
