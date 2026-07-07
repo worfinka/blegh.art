@@ -209,7 +209,7 @@ async function showNoNews() {
         "No anniversary today.";
 
     document.getElementById("news-description").innerHTML =
-        `But you should listen to <strong>${track}</strong> from <strong><span style="color:${color}">${album.title}</span></strong>.`;
+        `But you should listen to <strong>${track}</strong> from <strong><a href="${slug}/" <span style="color:${color}">${album.title}</span></a></strong>.`;
 
     const links = document.getElementById("news-links");
 
