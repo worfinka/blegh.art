@@ -1,19 +1,79 @@
 {
-    "quotes": [
-        "As the sea breeze hits my lungs, it takes me back to where I belong...",
-        "Rent-free living in your head, “RIP” they commented...", 
-        "Remember this for what it was...", 
-        "Death stared and I died a thousand times, nightmares left a riot in my mind...", 
-        "The sun was so low that day...", 
-        "Delete, rewind, and try to change this state of mind...", 
-        "Evil eyes, they’re watching me...", 
-        "Cast the first stone, from behind the throne...", 
-        "Im just a born again pessimist, i’ll only kick you from the precipice...", 
-        "I’m standing beneath the meteor, disaster’s breaking down my door...", 
-        "Chandelier...",
-        "A libertine stole the keys and drove this machine without me...", 
-        "Find a little light and hold it close, don’t lose sight of what matters most...",
-        "Enough pressure can create a diamond...", 
-        "We’re all dying to meet our maker, but all our gods have abandoned us..."
-    ]
+  "quotes": [
+    {
+      "text": "As the sea breeze hits my lungs, it takes me back to where I belong...",
+      "track": "The Distant Blue",
+      "album": "Lost Forever // Lost Together"
+    },
+    {
+      "text": "Rent-free living in your head, \"RIP\" they commented...",
+      "track": "Deep Fake",
+      "album": "The Classic Symptoms Of A Broken Spirit"
+    },
+    {
+      "text": "Remember this for what it was...",
+      "track": "A Wasted Hymn",
+      "album": "Holy Hell"
+    },
+    {
+      "text": "Death stared and I died a thousand times, nightmares left a riot in my mind...",
+      "track": "Gone With The Wind",
+      "album": "All Our Gods Have Abandoned Us"
+    },
+    {
+      "text": "The sun was so low that day...",
+      "track": "Doomsday",
+      "album": "Holy Hell"
+    },
+    {
+      "text": "Delete, rewind, and try to change this state of mind...",
+      "track": "Delete, Rewind",
+      "album": "The Here And Now"
+    },
+    {
+      "text": "Evil eyes, they’re watching me...",
+      "track": "Evil Eyes",
+      "album": "The Sky, The Earth & All Between"
+    },
+    {
+      "text": "Cast the first stone, from behind the throne...",
+      "track": "Behind The Throne",
+      "album": "Daybreaker"
+    },
+    {
+      "text": "I'm just a born again pessimist, I'll only kick you from the precipice...",
+      "track": "Born Again Pessimist",
+      "album": "The Classic Symptoms Of A Broken Spirit"
+    },
+    {
+      "text": "I'm standing beneath the meteor, disaster's breaking down my door...",
+      "track": "Meteor",
+      "album": "For Those That Wish To Exist"
+    },
+    {
+      "text": "Chandelier...",
+      "track": "Chandelier",
+      "album": "The Sky, The Earth & All Between"
+    },
+    {
+      "text": "A libertine stole the keys and drove this machine without me...",
+      "track": "Libertine",
+      "album": "For Those That Wish To Exist"
+    },
+    {
+      "text": "Find a little light and hold it close, don't lose sight of what matters most...",
+      "track": "Dying Is Absolutely Safe",
+      "album": "For Those That Wish To Exist"
+    },
+    {
+      "text": "Enough pressure can create a diamond...",
+      "track": "Impermanence",
+      "album": "For Those That Wish To Exist"
+    },
+    {
+      "text": "We're all dying to meet our maker, but all our gods have abandoned us...",
+      "track": "Nihilist",
+      "album": "All Our Gods Have Abandoned Us"
+    }
+  ]
 }
