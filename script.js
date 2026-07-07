@@ -190,17 +190,17 @@ async function showNoNews() {
     const response = await fetch("tracklist.json");
     const data = await response.json();
 
-    const albums = data.albums;
+    const trackAlbums = data.albums;
 
     const album =
-        albums[Math.floor(Math.random() * albums.length)];
+        trackAlbums[Math.floor(Math.random() * albums.length)];
 
     const track =
         album.tracks[Math.floor(Math.random() * album.tracks.length)];
     const color =
-    albums.find(a =>
-        a.name.trim().toLowerCase() === album.title.trim().toLowerCase()
-    )?.color || "#ffffff";
+        albums.find(a =>
+            a.name === album.title
+        )?.color || "#ffffff";
 
     document.getElementById("news-image").src =
         `images/albums/${album.id}.jpg`;
