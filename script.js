@@ -197,6 +197,10 @@ async function showNoNews() {
 
     const track =
         album.tracks[Math.floor(Math.random() * album.tracks.length)];
+    const color =
+    albums.find(a =>
+        a.name.trim().toLowerCase() === album.title.trim().toLowerCase()
+    )?.color || "#ffffff";
 
     document.getElementById("news-image").src =
         `images/albums/${album.id}.jpg`;
@@ -205,7 +209,7 @@ async function showNoNews() {
         "No anniversary today.";
 
     document.getElementById("news-description").innerHTML =
-        `But you should listen to <strong>${track}</strong> from <strong><span style="color:${albums.find(a => a.slug === album.id)?.color || "#ffffff"}">${album.title}</span></strong>.`;
+        `But you should listen to <strong>${track}</strong> from <strong><span style="color:${color}">${album.title}</span></strong>.`;
 
     const links = document.getElementById("news-links");
 
