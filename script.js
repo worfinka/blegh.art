@@ -2,17 +2,33 @@ let quotesArray = [];
 
 async function loadQuotes() {
     try {
-        const response = await fetch('quotes.json?v=' + Date.now());
+
+        const response = await fetch("quotes.json?v=" + Date.now());
         const data = await response.json();
+
         quotesArray = data.quotes;
+
         return true;
+
     } catch (error) {
-        console.error('Failed to load quote:', error);
+
+        console.error("Failed to load quotes:", error);
+
         quotesArray = [
-            "We are the architects of our own destruction.",
-            "Lost forever // lost together."
+            {
+                text: "We are the architects of our own destruction.",
+                track: "Unknown",
+                album: "Unknown"
+            },
+            {
+                text: "Lost forever // lost together.",
+                track: "Unknown",
+                album: "Unknown"
+            }
         ];
+
         return false;
+
     }
 }
 
@@ -22,10 +38,23 @@ function getRandomQuote() {
 }
 
 function displayQuote(quote) {
-    const quoteElement = document.getElementById('quote');
+
+    const quoteElement = document.getElementById("quote");
+    const quoteBlock = document.getElementById("quote-block");
+
     if (quoteElement) {
-        quoteElement.textContent = quote;
+
+        quoteElement.textContent = quote.text;
+
     }
+
+    if (quoteBlock) {
+
+        quoteBlock.title =
+            `Quote from ${quote.track} (${quote.album})`;
+
+    }
+
 }
 
 async function init() {
