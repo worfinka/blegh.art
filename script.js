@@ -1,7 +1,4 @@
-/* ============================================
-   blegh.art
-   Main Script
-============================================ */
+/* blegh.art - main script */
 
 const albums = [
     {
@@ -22,7 +19,7 @@ const albums = [
     {
         name: "The Here And Now",
         year: 2011,
-        slug: "thehereandnow"
+        slug: "than"
     },
     {
         name: "Daybreaker",
@@ -32,12 +29,12 @@ const albums = [
     {
         name: "Lost Forever // Lost Together",
         year: 2014,
-        slug: "lostforever"
+        slug: "lflt"
     },
     {
         name: "All Our Gods Have Abandoned Us",
         year: 2016,
-        slug: "allourgods"
+        slug: "aoghau"
     },
     {
         name: "Holy Hell",
@@ -48,24 +45,22 @@ const albums = [
     {
         name: "For Those That Wish To Exist",
         year: 2021,
-        slug: "forthosethatwishtoexist"
+        slug: "fttwte"
     },
     {
         name: "The Classic Symptoms Of A Broken Spirit",
         year: 2022,
-        slug: "theclassicsymptoms"
+        slug: "tcsoabs"
     },
     {
         name: "The Sky, The Earth & All Between",
         year: 2025,
-        slug: "thesky"
+        slug: "tste&ab"
     }
 ];
 
 
-/* ============================================
-   RANDOM QUOTE
-============================================ */
+/* random quote */
 
 async function loadQuotes() {
 
@@ -91,9 +86,7 @@ async function loadQuotes() {
 }
 
 
-/* ============================================
-   DATE
-============================================ */
+/* date */
 
 function getDaySuffix(day) {
 
@@ -137,9 +130,7 @@ function generateToday() {
 }
 
 
-/* ============================================
-   NEWS
-============================================ */
+/* news */
 
 async function loadNews(today) {
 
@@ -235,9 +226,7 @@ function renderNews(news) {
 }
 
 
-/* ============================================
-   ALBUM LIST
-============================================ */
+/* album list */
 
 function createAlbumList() {
 
@@ -274,9 +263,7 @@ function createAlbumList() {
 }
 
 
-/* ============================================
-   INIT
-============================================ */
+/* init */
 
 document.addEventListener("DOMContentLoaded", () => {
 
