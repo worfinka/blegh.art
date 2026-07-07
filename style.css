@@ -225,6 +225,50 @@ footer{
     font-size:14px;
 }
 
+.quote-block{
+    position:relative;
+}
+
+.quote-source{
+
+    margin-top:14px;
+
+    font-size:14px;
+
+    line-height:1.4;
+
+    color:#6d6d6d;
+
+    opacity:0;
+
+    transform:translateY(4px);
+
+    transition:.25s ease;
+
+    pointer-events:none;
+
+}
+
+.quote-block:hover .quote-source{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.quote-track{
+
+    color:#d8d8d8;
+
+}
+
+.quote-album{
+
+    color:#8b8b8b;
+
+}
+
 @media (max-width: 1100px){
 
     .hero{
