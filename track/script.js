@@ -39,21 +39,29 @@ async function loadTrackDatabase() {
    FIND TRACK
 ========================================= */
 
-function findTrack(slug) {
+function findTrack(trackName) {
 
-    for (const album of trackDatabase.albums) {
+    const query =
+        decodeURIComponent(trackName)
+            .replace(/-/g, " ")
+            .trim()
+            .toLowerCase();
 
-        for (const track of album.tracks) {
+    for (const album of database.albums) {
 
-            if (track.slug === slug) {
+        const found = album.tracks.find(track =>
+            track.toLowerCase() === query
+        );
 
-                currentTrack = track;
+        if (found) {
 
-                currentAlbum = album;
+            currentAlbum = album;
 
-                return true;
+            currentTrack = {
+                title: found
+            };
 
-            }
+            return true;
 
         }
 
@@ -82,7 +90,7 @@ function updateTitle() {
 
 function loadCover() {
 
-    document.getElementById("track-cover").src =
+    document.getElementById("cover").src =
         `../images/albums/${currentAlbum.id}.jpg`;
 
 }
@@ -97,26 +105,42 @@ function loadMeta() {
     document.getElementById("track-title").textContent =
         currentTrack.title;
 
-    document.getElementById("track-album").innerHTML =
-        `${currentAlbum.title}
-        <span class="track-year">
-            • ${currentAlbum.year}
-        </span>`;
-
-    document.getElementById("track-length").textContent =
-        currentTrack.length;
+    document.getElementById("album-title").innerHTML =
+        `${currentAlbum.title} (${currentAlbum.year})`;
 
 }
-
 
 /* =========================================
    QUOTE
 ========================================= */
 
-function loadQuote() {
+async function loadQuote() {
 
-    document.getElementById("track-quote").textContent =
-        currentTrack.quote;
+    const response =
+        await fetch("../quotes.json");
+
+    const data =
+        await response.json();
+
+    const quotes =
+        data.quotes.filter(q =>
+            q.track === currentTrack.title
+        );
+
+    if (!quotes.length) {
+
+        document.getElementById("quote").textContent =
+            "";
+
+        return;
+
+    }
+
+    const random =
+        quotes[Math.floor(Math.random() * quotes.length)];
+
+    document.getElementById("quote").textContent =
+        random.text;
 
 }
 
@@ -167,49 +191,19 @@ function loadDescription() {
 
 function loadLinks() {
 
-    const container =
-        document.getElementById("track-links");
+    const query =
+        encodeURIComponent(
+            `Architects ${currentTrack.title}`
+        );
 
-    container.innerHTML = "";
+    document.getElementById("spotify-link").href =
+        `https://open.spotify.com/search/${query}`;
 
-    if (currentTrack.spotify) {
+    document.getElementById("youtube-link").href =
+        `https://www.youtube.com/results?search_query=${query}`;
 
-        container.innerHTML +=
-        `
-        <a href="${currentTrack.spotify}"
-           target="_blank">
-
-            Spotify
-
-        </a>
-        `;
-    }
-
-    if (currentTrack.youtube) {
-
-        container.innerHTML +=
-        `
-        <a href="${currentTrack.youtube}"
-           target="_blank">
-
-            YouTube
-
-        </a>
-        `;
-    }
-
-    if (currentTrack.lyrics) {
-
-        container.innerHTML +=
-        `
-        <a href="${currentTrack.lyrics}"
-           target="_blank">
-
-            Lyrics
-
-        </a>
-        `;
-    }
+    document.getElementById("lyrics-link").href =
+        `https://genius.com/search?q=${query}`;
 
 }
 
@@ -224,22 +218,20 @@ function createWall() {
         document.getElementById("track-wall");
 
     const text =
-        (
-            currentTrack.title.replaceAll(" ", "")
-            +
-            currentAlbum.id.toUpperCase()
-        ).toUpperCase();
+        `${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}`;
 
-    let result = "";
+    wall.innerHTML = "";
 
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 18; i++) {
 
-        result += text;
+        const div =
+            document.createElement("div");
+
+        div.textContent = text;
+
+        wall.appendChild(div);
 
     }
-
-    wall.textContent =
-        result;
 
 }
 
