@@ -1,0 +1,403 @@
+/* =========================================
+   TRACK PAGE
+========================================= */
+
+.track-layout{
+    position:relative;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.track-header{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:36px;
+    align-items:start;
+    margin-bottom:28px;
+}
+
+.track-cover{
+    width:260px;
+    aspect-ratio:1;
+    object-fit:cover;
+    background:#111;
+}
+
+.track-meta{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.track-meta h1{
+    font-size:64px;
+    font-weight:300;
+    line-height:1;
+    margin:0;
+}
+
+.track-album{
+    margin-top:10px;
+    font-size:32px;
+    font-weight:300;
+    line-height:1.05;
+    color:#ffffff;
+}
+
+.track-year{
+    opacity:.45;
+}
+
+.track-length{
+    margin-top:8px;
+    font-size:58px;
+    color:rgba(255,255,255,.45);
+    font-weight:300;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.track-links{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+    margin-top:28px;
+}
+
+.track-links a{
+    color:#7f7dff;
+    font-size:22px;
+    transition:.2s;
+}
+
+.track-links a:hover{
+    color:#ffffff;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.quote-block{
+    margin:34px 0;
+}
+
+.quote-main{
+    display:inline-block;
+    border-left:2px solid rgba(255,255,255,.6);
+    padding-left:14px;
+}
+
+.quote-mark{
+    display:block;
+    font-size:26px;
+    opacity:.8;
+}
+
+.quote-text{
+    font-size:22px;
+    line-height:1.45;
+    max-width:820px;
+}
+
+/* =========================================
+   SHORT DESCRIPTION
+========================================= */
+
+.track-short{
+    margin-bottom:34px;
+    font-size:20px;
+    color:rgba(255,255,255,.45);
+    font-weight:600;
+}
+
+/* =========================================
+   LONG DESCRIPTION
+========================================= */
+
+.track-description{
+
+    max-width:930px;
+
+    font-size:22px;
+
+    line-height:1.22;
+
+    white-space:pre-line;
+
+    margin-bottom:55px;
+
+}
+
+/* =========================================
+   REFERENCES
+========================================= */
+
+.references{
+
+    max-width:930px;
+
+}
+
+.references h2{
+
+    font-size:28px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+}
+
+.reference{
+
+    margin-bottom:18px;
+
+}
+
+.reference-button{
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    font-size:18px;
+
+    color:#d0d0d0;
+
+    transition:.2s;
+
+}
+
+.reference-button:hover{
+
+    color:#fff;
+
+}
+
+.reference-button.active{
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.reference-content{
+
+    display:none;
+
+    margin-top:16px;
+
+    padding-left:20px;
+
+}
+
+.reference-content.active{
+
+    display:block;
+
+}
+
+.reference-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin:14px 0;
+
+}
+
+.reference-row img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:cover;
+
+}
+
+.reference-arrow{
+
+    font-size:26px;
+
+    opacity:.7;
+
+}
+
+.reference-lyrics{
+
+    font-size:18px;
+
+    line-height:1.35;
+
+}
+
+/* =========================================
+   TREE
+========================================= */
+
+.reference-tree{
+
+    margin-top:60px;
+
+    margin-bottom:40px;
+
+    font-size:48px;
+
+    font-weight:300;
+
+    color:rgba(255,255,255,.35);
+
+}
+
+/* =========================================
+   RIGHT TITLE
+========================================= */
+
+.track-wall{
+
+    position:fixed;
+
+    top:-200px;
+
+    right:-20px;
+
+    writing-mode:vertical-rl;
+
+    text-orientation:mixed;
+
+    font-size:150px;
+
+    font-weight:700;
+
+    letter-spacing:8px;
+
+    color:transparent;
+
+    -webkit-text-stroke:2px rgba(255,255,255,.25);
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:0;
+
+    line-height:.82;
+
+}
+
+/* =========================================
+   CONTENT ABOVE WALL
+========================================= */
+
+.track-layout,
+.top-header,
+footer{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:900px){
+
+.track-header{
+
+    grid-template-columns:1fr;
+
+}
+
+.track-cover{
+
+    width:100%;
+
+    max-width:420px;
+
+}
+
+.track-meta h1{
+
+    font-size:46px;
+
+}
+
+.track-album{
+
+    font-size:26px;
+
+}
+
+.track-length{
+
+    font-size:42px;
+
+}
+
+.track-description{
+
+    font-size:19px;
+
+}
+
+.track-wall{
+
+    display:none;
+
+}
+
+}
+
+@media (max-width:600px){
+
+.track-meta h1{
+
+    font-size:36px;
+
+}
+
+.track-album{
+
+    font-size:22px;
+
+}
+
+.track-length{
+
+    font-size:34px;
+
+}
+
+.track-links a{
+
+    font-size:18px;
+
+}
+
+.track-description{
+
+    font-size:17px;
+
+}
+
+.reference-tree{
+
+    font-size:30px;
+
+}
+
+}
