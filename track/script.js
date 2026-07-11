@@ -40,22 +40,20 @@ async function loadTrackDatabase() {
 
 function findTrack(trackName) {
 
-    const query =
-        decodeURIComponent(trackName)
-            .replace(/-/g, " ")
-            .trim()
-            .toLowerCase();
+    const query = decodeURIComponent(trackName)
+        .replace(/-/g, " ")
+        .trim()
+        .toLowerCase();
 
-    for (const album of database.albums) {
+    for (const album of trackDatabase.albums) {
 
         const found = album.tracks.find(track =>
-            track.toLowerCase() === query
+            track.title.toLowerCase() === query
         );
 
         if (found) {
 
             currentAlbum = album;
-
             currentTrack = found;
 
             return true;
