@@ -264,41 +264,36 @@
    RIGHT TITLE
 ========================================= */
 
-.track-wall {
+.track-wall{
 
-    position: fixed;
+    position:fixed;
 
-    top: 40px;
-    right: 30px;
+    top:32px;
+    right:45px;
 
-    height: calc(100vh - 80px);
+    height:calc(100vh - 64px);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
 
-    pointer-events: none;
+    writing-mode:vertical-rl;
 
-    overflow: hidden;
-    writing-mode: vertical-rl;
+    white-space:nowrap;
 
-    text-orientation: mixed;
+    font-size:150px;
+    font-weight:700;
+    line-height:0.9;
 
-    transform: rotate(180deg);
+    color:#000;
 
-    white-space: nowrap;
+    -webkit-text-stroke:2px #7F7F7F;
+    text-stroke:2px #7F7F7F;
 
-    font-size: 140px;
+    user-select:none;
+    pointer-events:none;
 
-    font-weight: 700;
-
-    letter-spacing: 6px;
-
-    color: #7f7f7f;      /* вместо opacity */
-
-    opacity: 1;
-
-    user-select: none;
+    z-index:0;
 
 }
 
