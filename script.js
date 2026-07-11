@@ -231,6 +231,9 @@ async function showNoNews() {
         <a href="https://www.youtube.com/results?search_query=${query}" target="_blank">
             YouTube
         </a>
+        <a href="https://blegh.art/track?s=${trackSlug}" target="_blank">
+            blegh.art
+        </a>
     `;
 }
 
