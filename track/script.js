@@ -563,9 +563,17 @@ async function init() {
 
         initParallax();
 
-        await loadReferencesDatabase();
+        try {
 
-        loadReferences();
+           await loadReferencesDatabase();
+           loadReferences();
+
+        }
+        catch(e){
+
+           console.warn("References not loaded.");
+
+        }
 
     }
 
