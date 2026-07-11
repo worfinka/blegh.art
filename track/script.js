@@ -213,7 +213,7 @@ function createWall() {
         document.getElementById("track-wall");
 
     wall.textContent =
-        `${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}`;
+        `${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}`;
 
 }
 
