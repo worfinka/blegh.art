@@ -14,7 +14,6 @@ let trackDatabase = null;
 function getTrackSlug() {
 
     const params = new URLSearchParams(window.location.search);
-
     return params.get("s");
 
 }
@@ -529,7 +528,7 @@ function loadReferences() {
 async function init() {
 
     try {
-
+        console.log(getTrackSlug());
         const slug = getTrackSlug();
 
         if (!slug) {
