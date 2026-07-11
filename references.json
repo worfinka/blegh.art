@@ -1,0 +1,639 @@
+{
+  "tracks": {
+    "Early Grave": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "Death is no man's friend", "referenceId": "ref1" },
+        { "text": "And I can't tell daylight from streetlights any-fucking-more", "referenceId": "ref35" },
+        { "text": "I'll stay out until my lungs bleed", "referenceId": "ref36" },
+        { "text": "Forever would just be so easy to fall into", "referenceId": "ref51" }
+      ]
+    },
+    "Memento Mori": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "Death is an open door", "referenceId": "ref1" },
+        { "text": "Death is an open door", "referenceId": "ref2" },
+        { "text": "Let me live and die in peace", "referenceId": "ref6" },
+        { "text": "The sea will part, where oceans meet. Finally complete", "referenceId": "ref7" },
+        { "text": "Was your life worth dying for?", "referenceId": "ref11" },
+        { "text": "Dismantled piece by piece, what's left will not decease", "referenceId": "ref33" },
+        { "text": "I swear I will not look back...", "referenceId": "ref53" },
+        { "text": "It'll wear you down through skin and bone, through skin and bone", "referenceId": "ref63" }
+      ]
+    },
+    "Doomsday": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "Death is an open door", "referenceId": "ref2" },
+        { "text": "Death is an open door", "referenceId": "ref3" },
+        { "text": "What will be will be", "referenceId": "ref61" }
+      ]
+    },
+    "Death Is Not Defeat": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "Death is not defeat", "referenceId": "ref3" },
+        { "text": "Death is not defeat", "referenceId": "ref4" },
+        { "text": "Now you're finally complete, I will see you where oceans meet", "referenceId": "ref7" },
+        { "text": "Now you're finally complete, I will see you where oceans meet", "referenceId": "ref8" },
+        { "text": "I'll dismantle piece by piece and I will know that death is not defeat", "referenceId": "ref33" },
+        { "text": "When I leave this skin and bone", "referenceId": "ref63" }
+      ]
+    },
+    "Dying Is Absolutely Safe": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Death is not my enemy", "referenceId": "ref4" },
+        { "text": "May all the beggars be blessed", "referenceId": "ref10" },
+        { "text": "Beloved distant blue, one day I'll die for you", "referenceId": "ref17" },
+        { "text": "I've got a lot to lose, but I won't lie to you", "referenceId": "ref26" },
+        { "text": "Im praying for a remedy", "referenceId": "ref28" },
+        { "text": "With the ravens here to stay and the doves all flying away", "referenceId": "ref29" },
+        { "text": "Dying is absolutely safe", "referenceId": "ref50" }
+      ]
+    },
+    "Impermanence": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "We're all players in a symphony", "referenceId": "ref5" },
+        { "text": "'Cause nobody wants to meet their maker", "referenceId": "ref25" },
+        { "text": "Do you really wanna live forever?", "referenceId": "ref66" }
+      ]
+    },
+    "be very afraid": {
+      "album": "The Classic Symptoms of a Broken Spirit",
+      "year": 2022,
+      "quotes": [
+        { "text": "We're all players and the world's a stage", "referenceId": "ref5" },
+        { "text": "Living but we never learn", "referenceId": "ref69" }
+      ]
+    },
+    "Dead Butterflies": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "I just want to live and die in piece", "referenceId": "ref6" },
+        { "text": "Goodbye, all the doves have flown away", "referenceId": "ref29" }
+      ]
+    },
+    "Libertine": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Parting the seas isn't free", "referenceId": "ref8" }
+      ]
+    },
+    "Nihilist": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "We are beggars, we are so fucking weak", "referenceId": "ref9" },
+        { "text": "Well, we're all dying to meet our maker", "referenceId": "ref25" },
+        { "text": "They'd trade their hearts if they were made of gold, but they're as worthless as the souls they sold", "referenceId": "ref62" }
+      ]
+    },
+    "Royal Beggars": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "We're nothing more than royal beggars", "referenceId": "ref9" },
+        { "text": "We're nothing more than royal beggars", "referenceId": "ref10" },
+        { "text": "'Cause we're asleep in a hurricane", "referenceId": "ref20" },
+        { "text": "Do you wanna live forever alone?", "referenceId": "ref66" }
+      ]
+    },
+    "A Wasted Hymn": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "Can you live a life worth dying for?", "referenceId": "ref11" },
+        { "text": "God, what a sorry state", "referenceId": "ref24" },
+        { "text": "I'll always carry the cross, but all is not lost", "referenceId": "ref34" },
+        { "text": "Now it's time to think or swim", "referenceId": "ref56" }
+      ]
+    },
+    "Untitled": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "Hope's a dangerous thing", "referenceId": "ref12" }
+      ]
+    },
+    "Gone With The Wind": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "... «my friend, hope is a prison»", "referenceId": "ref12" },
+        { "text": "... «my friend, hope is a prison»", "referenceId": "ref13" },
+        { "text": "A sickness with no remedy except the ones inside of me", "referenceId": "ref27" }
+      ]
+    },
+    "Damnation": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "If hope is a prison, then maybe faith will set me free", "referenceId": "ref13" },
+        { "text": "If hope is a prison, then maybe faith will set me free", "referenceId": "ref14" }
+      ]
+    },
+    "Blackhole": {
+      "album": "The Sky, The Earth & All Between",
+      "year": 2025,
+      "quotes": [
+        { "text": "Bombs drop on the prison hope built instead.", "referenceId": "ref14" },
+        { "text": "I close my eyes and I die a thousand times", "referenceId": "ref39" }
+      ]
+    },
+    "Gravity": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "So twist the knife 'cause I'm finally awake", "referenceId": "ref15" },
+        { "text": "It's just a matter of time before the wave breaks", "referenceId": "ref21" }
+      ]
+    },
+    "Holy Hell": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "Don't forget to breathe when the knife begins to twist", "referenceId": "ref15" },
+        { "text": "Don't forget to breathe when the knife begins to twist", "referenceId": "ref16" },
+        { "text": "Holy hell, I've got nothing left to lose", "referenceId": "ref26" },
+        { "text": "Remember we were born to burn", "referenceId": "ref30" },
+        { "text": "Light one match and burn down the empire", "referenceId": "ref42" },
+        { "text": "These wounds will set me free", "referenceId": "ref55" },
+        { "text": "Maybe we'll never learn?", "referenceId": "ref68" },
+        { "text": "Maybe we'll never learn?", "referenceId": "ref69" }
+      ]
+    },
+    "Flight Without Feathers": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Don't forget to breathe", "referenceId": "ref16" }
+      ]
+    },
+    "Distant Blue": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "That distant blue, that's me and you", "referenceId": "ref17" }
+      ]
+    },
+    "These Colours Don't Run": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "So repeat this line, «everything, everything is fine»", "referenceId": "ref18" },
+        { "text": "These colours don't run", "referenceId": "ref47" },
+        { "text": "Don't believe everything that you're told", "referenceId": "ref57" }
+      ]
+    },
+    "Little Wonder": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Everything is fucking fine", "referenceId": "ref18" },
+        { "text": "Everything is fucking fine", "referenceId": "ref19" }
+      ]
+    },
+    "Whiplash": {
+      "album": "The Sky, The Earth & All Between",
+      "year": 2025,
+      "quotes": [
+        { "text": "Everything is going to be fine", "referenceId": "ref19" }
+      ]
+    },
+    "Black Lungs": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Are you sleeping deep in the hurricane?", "referenceId": "ref20" },
+        { "text": "Justice lays bound and black bagged", "referenceId": "ref45" },
+        { "text": "Will enough be enough when we're holding on for dear life?", "referenceId": "ref60" }
+      ]
+    },
+    "Mortal After All": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "'Cause every wave has got to break", "referenceId": "ref21" },
+        { "text": "Too lost in the light to see what matters most", "referenceId": "ref23" }
+      ]
+    },
+    "Dead March": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "All I want is a moment or something I can hold close for eternity", "referenceId": "ref22" }
+      ]
+    },
+    "C.A.N.C.E.R.": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "Find a little light and hold it close, don't lose sight of what matters most", "referenceId": "ref22" },
+        { "text": "Find a little light and hold it close, don't lose sight of what matters most", "referenceId": "ref23" }
+      ]
+    },
+    "Colony Collapse": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "Dear, oh dear, what a sorry state we're in", "referenceId": "ref24" }
+      ]
+    },
+    "Meteor": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Is there no remedy, remedy?", "referenceId": "ref27" },
+        { "text": "Is there no remedy, remedy?", "referenceId": "ref28" }
+      ]
+    },
+    "Broken Cross": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "God only knows why we were born to burn", "referenceId": "ref30" },
+        { "text": "A fucking tyrant in a Hollow Crown", "referenceId": "ref43" }
+      ]
+    },
+    "Dead Man Talking": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "They hung the heroes", "referenceId": "ref31" },
+        { "text": "Tell the rats to get back in the gutter", "referenceId": "ref32" }
+      ]
+    },
+    "Goliath": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "We'll all be hanging a hero", "referenceId": "ref31" },
+        { "text": "No time for rats in the gutter", "referenceId": "ref32" }
+      ]
+    },
+    "All Love Is Lost": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "All love is lost, so carry the cross", "referenceId": "ref34" },
+        { "text": "We will arm them to the teeth", "referenceId": "ref40" }
+      ]
+    },
+    "Red Eyes": {
+      "album": "The Here and Now",
+      "year": 2011,
+      "quotes": [
+        { "text": "And still today I cannot tell dreams from nightmares anymore", "referenceId": "ref35" }
+      ]
+    },
+    "In The Desert": {
+      "album": "Ruin",
+      "year": 2007,
+      "quotes": [
+        { "text": "Our lungs will not collapse", "referenceId": "ref36" }
+      ]
+    },
+    "This Confession Means Nothing": {
+      "album": "Ruin",
+      "year": 2007,
+      "quotes": [
+        { "text": "I close my eyes", "referenceId": "ref37" }
+      ]
+    },
+    "Left With A Last Minute": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "I close my eyes and I still fucking see you", "referenceId": "ref37" },
+        { "text": "I close my eyes and I still fucking see you", "referenceId": "ref38" }
+      ]
+    },
+    "Outsider Heart": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "I close my eyes and take a deep breath", "referenceId": "ref38" },
+        { "text": "I close my eyes and take a deep breath", "referenceId": "ref39" }
+      ]
+    },
+    "To The Death": {
+      "album": "Nightmares",
+      "year": 2006,
+      "quotes": [
+        { "text": "We'll fight them to the death", "referenceId": "ref40" },
+        { "text": "Burn down the houses", "referenceId": "ref44" },
+        { "text": "Pray that our justice be done", "referenceId": "ref45" }
+      ]
+    },
+    "A Portrait For The Deceased": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "Light me up its all too much for me", "referenceId": "ref41" }
+      ]
+    },
+    "Heartburn": {
+      "album": "The Here and Now",
+      "year": 2011,
+      "quotes": [
+        { "text": "Burn everything you have and leave it all behind", "referenceId": "ref41" },
+        { "text": "Burn everything you have and leave it all behind", "referenceId": "ref42" },
+        { "text": "If time only stood still for ever", "referenceId": "ref54" }
+      ]
+    },
+    "Dethroned": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "Remove your Hollow Crown", "referenceId": "ref43" }
+      ]
+    },
+    "burn down my house": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "Burn down my house", "referenceId": "ref44" }
+      ]
+    },
+    "Minesweeper": {
+      "album": "Nightmares",
+      "year": 2006,
+      "quotes": [
+        { "text": "Tell them it was all worth it", "referenceId": "ref46" },
+        { "text": "Been searching all day for the answers", "referenceId": "ref48" }
+      ]
+    },
+    "A Match Made In Heaven": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "Tell me was it all worth it", "referenceId": "ref46" }
+      ]
+    },
+    "You Don't Walk Away From Dismemberment": {
+      "album": "Nightmares",
+      "year": 2006,
+      "quotes": [
+        { "text": "The colours are fading", "referenceId": "ref47" }
+      ]
+    },
+    "Hereafter": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "I've been searching through the wreckage", "referenceId": "ref48" }
+      ]
+    },
+    "Buried At Sea": {
+      "album": "Ruin",
+      "year": 2007,
+      "quotes": [
+        { "text": "How can you smile when you see me crumbling?", "referenceId": "ref49" }
+      ]
+    },
+    "Heartless": {
+      "album": "Ruin",
+      "year": 2007,
+      "quotes": [
+        { "text": "How can you stand there and look me in the eye?", "referenceId": "ref49" }
+      ]
+    },
+    "You'll find safety": {
+      "album": "Nightmares",
+      "year": 2006,
+      "quotes": [
+        { "text": "Find safety in yourself", "referenceId": "ref50" }
+      ]
+    },
+    "Do You Dream Of Armageddon?": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "We all fall in parallel", "referenceId": "ref51" }
+      ]
+    },
+    "Borrowed Time": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "A guilty conscience hangs over your head", "referenceId": "ref52" },
+        { "text": "I'm not looking back", "referenceId": "ref53" }
+      ]
+    },
+    "Elegy": {
+      "album": "The Sky, The Earth & All Between",
+      "year": 2025,
+      "quotes": [
+        { "text": "A guilty conscience? I doubt that you'd ever had one", "referenceId": "ref52" }
+      ]
+    },
+    "One Of These Days": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "Will this ever end or will time stand still forever?", "referenceId": "ref54" }
+      ]
+    },
+    "Hollow Crown": {
+      "album": "Hollow Crown",
+      "year": 2009,
+      "quotes": [
+        { "text": "These wounds have bled", "referenceId": "ref55" }
+      ]
+    },
+    "The Blues": {
+      "album": "The Here and Now",
+      "year": 2011,
+      "quotes": [
+        { "text": "I used to think and now I swim", "referenceId": "ref56" }
+      ]
+    },
+    "Delete, Rewind": {
+      "album": "The Here and Now",
+      "year": 2011,
+      "quotes": [
+        { "text": "... That's what we're told", "referenceId": "ref57" }
+      ]
+    },
+    "Daybreak": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "Shed this skin", "referenceId": "ref58" }
+      ]
+    },
+    "Downfall": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "Watch them shed their skin", "referenceId": "ref58" }
+      ]
+    },
+    "Behind The Throne": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "Seven billion, one of a kind/Collide together, intertwined", "referenceId": "ref59" }
+      ]
+    },
+    "Modern Misery": {
+      "album": "Holy Hell",
+      "year": 2018,
+      "quotes": [
+        { "text": "Seven billion hungry ghosts", "referenceId": "ref59" }
+      ]
+    },
+    "Gravedigger": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "But we're still holding on for dear life", "referenceId": "ref60" }
+      ]
+    },
+    "Castles In The Air": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "I just can't accept what will be will be", "referenceId": "ref61" }
+      ]
+    },
+    "deep fake": {
+      "album": "The Classic Symptoms of a Broken Spirit",
+      "year": 2022,
+      "quotes": [
+        { "text": "They've got a fist full of fucking gold, a return for the souls they sold", "referenceId": "ref62" }
+      ]
+    },
+    "The Bitter End": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "Tear down the walls, built to divide/Can you feel that fire growing?", "referenceId": "ref64" }
+      ]
+    },
+    "Unbeliever": {
+      "album": "Daybreaker",
+      "year": 2012,
+      "quotes": [
+        { "text": "Now tear down the walls that were built to divide/It's time to extinguish that fire, that fire inside", "referenceId": "ref64" }
+      ]
+    },
+    "Untitled II": {
+      "album": "Lost Forever // Lost Together",
+      "year": 2014,
+      "quotes": [
+        { "text": "Believe that we're nothing more than sisters and brothers", "referenceId": "ref65" }
+      ]
+    },
+    "Discourse Is Dead": {
+      "album": "For Those That Wish to Exist",
+      "year": 2021,
+      "quotes": [
+        { "text": "We're all sisters and brothers", "referenceId": "ref65" }
+      ]
+    },
+    "The Empty Hourglass": {
+      "album": "All Our Gods Have Abandoned Us",
+      "year": 2016,
+      "quotes": [
+        { "text": "The empty hourglass, we're going nowhere fast", "referenceId": "ref67" }
+      ]
+    },
+    "tear gas": {
+      "album": "The Classic Symptoms of a Broken Spirit",
+      "year": 2022,
+      "quotes": [
+        { "text": "Are you looking at the hourglass?", "referenceId": "ref67" }
+      ]
+    },
+    "Learn To Live": {
+      "album": "The Here and Now",
+      "year": 2011,
+      "quotes": [
+        { "text": "And learn to live", "referenceId": "ref68" }
+      ]
+    }
+  },
+  "references": [
+    { "id": "ref1", "fromTrack": "Early Grave", "fromQuote": "Death is no man's friend", "toTrack": "Memento Mori", "toQuote": "Death is an open door" },
+    { "id": "ref2", "fromTrack": "Memento Mori", "fromQuote": "Death is an open door", "toTrack": "Doomsday", "toQuote": "Death is an open door" },
+    { "id": "ref3", "fromTrack": "Doomsday", "fromQuote": "Death is an open door", "toTrack": "Death Is Not Defeat", "toQuote": "Death is not defeat" },
+    { "id": "ref4", "fromTrack": "Death Is Not Defeat", "fromQuote": "Death is not defeat", "toTrack": "Dying Is Absolutely Safe", "toQuote": "Death is not my enemy" },
+    { "id": "ref5", "fromTrack": "Impermanence", "fromQuote": "We're all players in a symphony", "toTrack": "be very afraid", "toQuote": "We're all players and the world's a stage" },
+    { "id": "ref6", "fromTrack": "Memento Mori", "fromQuote": "Let me live and die in peace", "toTrack": "Dead Butterflies", "toQuote": "I just want to live and die in piece" },
+    { "id": "ref7", "fromTrack": "Memento Mori", "fromQuote": "The sea will part, where oceans meet. Finally complete", "toTrack": "Death Is Not Defeat", "toQuote": "Now you're finally complete, I will see you where oceans meet" },
+    { "id": "ref8", "fromTrack": "Death Is Not Defeat", "fromQuote": "Now you're finally complete, I will see you where oceans meet", "toTrack": "Libertine", "toQuote": "Parting the seas isn't free" },
+    { "id": "ref9", "fromTrack": "Nihilist", "fromQuote": "We are beggars, we are so fucking weak", "toTrack": "Royal Beggars", "toQuote": "We're nothing more than royal beggars" },
+    { "id": "ref10", "fromTrack": "Royal Beggars", "fromQuote": "We're nothing more than royal beggars", "toTrack": "Dying Is Absolutely Safe", "toQuote": "May all the beggars be blessed" },
+    { "id": "ref11", "fromTrack": "Memento Mori", "fromQuote": "Was your life worth dying for?", "toTrack": "A Wasted Hymn", "toQuote": "Can you live a life worth dying for?" },
+    { "id": "ref12", "fromTrack": "Untitled", "fromQuote": "Hope's a dangerous thing", "toTrack": "Gone With The Wind", "toQuote": "... «my friend, hope is a prison»" },
+    { "id": "ref13", "fromTrack": "Gone With The Wind", "fromQuote": "... «my friend, hope is a prison»", "toTrack": "Damnation", "toQuote": "If hope is a prison, then maybe faith will set me free" },
+    { "id": "ref14", "fromTrack": "Damnation", "fromQuote": "If hope is a prison, then maybe faith will set me free", "toTrack": "Blackhole", "toQuote": "Bombs drop on the prison hope built instead." },
+    { "id": "ref15", "fromTrack": "Gravity", "fromQuote": "So twist the knife 'cause I'm finally awake", "toTrack": "Holy Hell", "toQuote": "Don't forget to breathe when the knife begins to twist" },
+    { "id": "ref16", "fromTrack": "Holy Hell", "fromQuote": "Don't forget to breathe when the knife begins to twist", "toTrack": "Flight Without Feathers", "toQuote": "Don't forget to breathe" },
+    { "id": "ref17", "fromTrack": "Distant Blue", "fromQuote": "That distant blue, that's me and you", "toTrack": "Dying Is Absolutely Safe", "toQuote": "Beloved distant blue, one day I'll die for you" },
+    { "id": "ref18", "fromTrack": "These Colours Don't Run", "fromQuote": "So repeat this line, «everything, everything is fine»", "toTrack": "Little Wonder", "toQuote": "Everything is fucking fine" },
+    { "id": "ref19", "fromTrack": "Little Wonder", "fromQuote": "Everything is fucking fine", "toTrack": "Whiplash", "toQuote": "Everything is going to be fine" },
+    { "id": "ref20", "fromTrack": "Royal Beggars", "fromQuote": "'Cause we're asleep in a hurricane", "toTrack": "Black Lungs", "toQuote": "Are you sleeping deep in the hurricane?" },
+    { "id": "ref21", "fromTrack": "Gravity", "fromQuote": "It's just a matter of time before the wave breaks", "toTrack": "Mortal After All", "toQuote": "'Cause every wave has got to break" },
+    { "id": "ref22", "fromTrack": "Dead March", "fromQuote": "All I want is a moment or something I can hold close for eternity", "toTrack": "C.A.N.C.E.R.", "toQuote": "Find a little light and hold it close, don't lose sight of what matters most" },
+    { "id": "ref23", "fromTrack": "C.A.N.C.E.R.", "fromQuote": "Find a little light and hold it close, don't lose sight of what matters most", "toTrack": "Mortal After All", "toQuote": "Too lost in the light to see what matters most" },
+    { "id": "ref24", "fromTrack": "Colony Collapse", "fromQuote": "Dear, oh dear, what a sorry state we're in", "toTrack": "A Wasted Hymn", "toQuote": "God, what a sorry state" },
+    { "id": "ref25", "fromTrack": "Nihilist", "fromQuote": "Well, we're all dying to meet our maker", "toTrack": "Impermanence", "toQuote": "'Cause nobody wants to meet their maker" },
+    { "id": "ref26", "fromTrack": "Holy Hell", "fromQuote": "Holy hell, I've got nothing left to lose", "toTrack": "Dying Is Absolutely Safe", "toQuote": "I've got a lot to lose, but I won't lie to you" },
+    { "id": "ref27", "fromTrack": "Gone With The Wind", "fromQuote": "A sickness with no remedy except the ones inside of me", "toTrack": "Meteor", "toQuote": "Is there no remedy, remedy?" },
+    { "id": "ref28", "fromTrack": "Meteor", "fromQuote": "Is there no remedy, remedy?", "toTrack": "Dying Is Absolutely Safe", "toQuote": "Im praying for a remedy" },
+    { "id": "ref29", "fromTrack": "Dead Butterflies", "fromQuote": "Goodbye, all the doves have flown away", "toTrack": "Dying Is Absolutely Safe", "toQuote": "With the ravens here to stay and the doves all flying away" },
+    { "id": "ref30", "fromTrack": "Broken Cross", "fromQuote": "God only knows why we were born to burn", "toTrack": "Holy Hell", "toQuote": "Remember we were born to burn" },
+    { "id": "ref31", "fromTrack": "Dead Man Talking", "fromQuote": "They hung the heroes", "toTrack": "Goliath", "toQuote": "We'll all be hanging a hero" },
+    { "id": "ref32", "fromTrack": "Dead Man Talking", "fromQuote": "Tell the rats to get back in the gutter", "toTrack": "Goliath", "toQuote": "No time for rats in the gutter" },
+    { "id": "ref33", "fromTrack": "Memento Mori", "fromQuote": "Dismantled piece by piece, what's left will not decease", "toTrack": "Death Is Not Defeat", "toQuote": "I'll dismantle piece by piece and I will know that death is not defeat" },
+    { "id": "ref34", "fromTrack": "All Love Is Lost", "fromQuote": "All love is lost, so carry the cross", "toTrack": "A Wasted Hymn", "toQuote": "I'll always carry the cross, but all is not lost" },
+    { "id": "ref35", "fromTrack": "Early Grave", "fromQuote": "And I can't tell daylight from streetlights any-fucking-more", "toTrack": "Red Eyes", "toQuote": "And still today I cannot tell dreams from nightmares anymore" },
+    { "id": "ref36", "fromTrack": "In The Desert", "fromQuote": "Our lungs will not collapse", "toTrack": "Early Grave", "toQuote": "I'll stay out until my lungs bleed" },
+    { "id": "ref37", "fromTrack": "This Confession Means Nothing", "fromQuote": "I close my eyes", "toTrack": "Left With A Last Minute", "toQuote": "I close my eyes and I still fucking see you" },
+    { "id": "ref38", "fromTrack": "Left With A Last Minute", "fromQuote": "I close my eyes and I still fucking see you", "toTrack": "Outsider Heart", "toQuote": "I close my eyes and take a deep breath" },
+    { "id": "ref39", "fromTrack": "Outsider Heart", "fromQuote": "I close my eyes and take a deep breath", "toTrack": "Blackhole", "toQuote": "I close my eyes and I die a thousand times" },
+    { "id": "ref40", "fromTrack": "To The Death", "fromQuote": "We'll fight them to the death", "toTrack": "All Love Is Lost", "toQuote": "We will arm them to the teeth" },
+    { "id": "ref41", "fromTrack": "A Portrait For The Deceased", "fromQuote": "Light me up its all too much for me", "toTrack": "Heartburn", "toQuote": "Burn everything you have and leave it all behind" },
+    { "id": "ref42", "fromTrack": "Heartburn", "fromQuote": "Burn everything you have and leave it all behind", "toTrack": "Holy Hell", "toQuote": "Light one match and burn down the empire" },
+    { "id": "ref43", "fromTrack": "Dethroned", "fromQuote": "Remove your Hollow Crown", "toTrack": "Broken Cross", "toQuote": "A fucking tyrant in a Hollow Crown" },
+    { "id": "ref44", "fromTrack": "To The Death", "fromQuote": "Burn down the houses", "toTrack": "burn down my house", "toQuote": "Burn down my house" },
+    { "id": "ref45", "fromTrack": "To The Death", "fromQuote": "Pray that our justice be done", "toTrack": "Black Lungs", "toQuote": "Justice lays bound and black bagged" },
+    { "id": "ref46", "fromTrack": "Minesweeper", "fromQuote": "Tell them it was all worth it", "toTrack": "A Match Made In Heaven", "toQuote": "Tell me was it all worth it" },
+    { "id": "ref47", "fromTrack": "You Don't Walk Away From Dismemberment", "fromQuote": "The colours are fading", "toTrack": "These Colours Don't Run", "toQuote": "These colours don't run" },
+    { "id": "ref48", "fromTrack": "Minesweeper", "fromQuote": "Been searching all day for the answers", "toTrack": "Hereafter", "toQuote": "I've been searching through the wreckage" },
+    { "id": "ref49", "fromTrack": "Buried At Sea", "fromQuote": "How can you smile when you see me crumbling?", "toTrack": "Heartless", "toQuote": "How can you stand there and look me in the eye?" },
+    { "id": "ref50", "fromTrack": "You'll find safety", "fromQuote": "Find safety in yourself", "toTrack": "Dying Is Absolutely Safe", "toQuote": "Dying is absolutely safe" },
+    { "id": "ref51", "fromTrack": "Early Grave", "fromQuote": "Forever would just be so easy to fall into", "toTrack": "Do You Dream Of Armageddon?", "toQuote": "We all fall in parallel" },
+    { "id": "ref52", "fromTrack": "Borrowed Time", "fromQuote": "A guilty conscience hangs over your head", "toTrack": "Elegy", "toQuote": "A guilty conscience? I doubt that you'd ever had one" },
+    { "id": "ref53", "fromTrack": "Borrowed Time", "fromQuote": "I'm not looking back", "toTrack": "Memento Mori", "toQuote": "I swear I will not look back..." },
+    { "id": "ref54", "fromTrack": "One Of These Days", "fromQuote": "Will this ever end or will time stand still forever?", "toTrack": "Heartburn", "toQuote": "If time only stood still for ever" },
+    { "id": "ref55", "fromTrack": "Hollow Crown", "fromQuote": "These wounds have bled", "toTrack": "Holy Hell", "toQuote": "These wounds will set me free" },
+    { "id": "ref56", "fromTrack": "The Blues", "fromQuote": "I used to think and now I swim", "toTrack": "A Wasted Hymn", "toQuote": "Now it's time to think or swim" },
+    { "id": "ref57", "fromTrack": "Delete, Rewind", "fromQuote": "... That's what we're told", "toTrack": "These Colours Don't Run", "toQuote": "Don't believe everything that you're told" },
+    { "id": "ref58", "fromTrack": "Daybreak", "fromQuote": "Shed this skin", "toTrack": "Downfall", "toQuote": "Watch them shed their skin" },
+    { "id": "ref59", "fromTrack": "Behind The Throne", "fromQuote": "Seven billion, one of a kind/Collide together, intertwined", "toTrack": "Modern Misery", "toQuote": "Seven billion hungry ghosts" },
+    { "id": "ref60", "fromTrack": "Gravedigger", "fromQuote": "But we're still holding on for dear life", "toTrack": "Black Lungs", "toQuote": "Will enough be enough when we're holding on for dear life?" },
+    { "id": "ref61", "fromTrack": "Castles In The Air", "fromQuote": "I just can't accept what will be will be", "toTrack": "Doomsday", "toQuote": "What will be will be" },
+    { "id": "ref62", "fromTrack": "Nihilist", "fromQuote": "They'd trade their hearts if they were made of gold, but they're as worthless as the souls they sold", "toTrack": "deep fake", "toQuote": "They've got a fist full of fucking gold, a return for the souls they sold" },
+    { "id": "ref63", "fromTrack": "Memento Mori", "fromQuote": "It'll wear you down through skin and bone, through skin and bone", "toTrack": "Death Is Not Defeat", "toQuote": "When I leave this skin and bone" },
+    { "id": "ref64", "fromTrack": "The Bitter End", "fromQuote": "Tear down the walls, built to divide/Can you feel that fire growing?", "toTrack": "Unbeliever", "toQuote": "Now tear down the walls that were built to divide/It's time to extinguish that fire, that fire inside" },
+    { "id": "ref65", "fromTrack": "Untitled II", "fromQuote": "Believe that we're nothing more than sisters and brothers", "toTrack": "Discourse Is Dead", "toQuote": "We're all sisters and brothers" },
+    { "id": "ref66", "fromTrack": "Royal Beggars", "fromQuote": "Do you wanna live forever alone?", "toTrack": "Impermanence", "toQuote": "Do you really wanna live forever?" },
+    { "id": "ref67", "fromTrack": "The Empty Hourglass", "fromQuote": "The empty hourglass, we're going nowhere fast", "toTrack": "tear gas", "toQuote": "Are you looking at the hourglass?" },
+    { "id": "ref68", "fromTrack": "Learn To Live", "fromQuote": "And learn to live", "toTrack": "Holy Hell", "toQuote": "Maybe we'll never learn?" },
+    { "id": "ref69", "fromTrack": "Holy Hell", "fromQuote": "Maybe we'll never learn?", "toTrack": "be very afraid", "toQuote": "Living but we never learn" }
+  ]
+}
