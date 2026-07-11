@@ -212,21 +212,8 @@ function createWall() {
     const wall =
         document.getElementById("track-wall");
 
-    const text =
+    wall.textContent =
         `${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}`;
-
-    wall.innerHTML = "";
-
-    for (let i = 0; i < 18; i++) {
-
-        const div =
-            document.createElement("div");
-
-        div.textContent = text;
-
-        wall.appendChild(div);
-
-    }
 
 }
 
