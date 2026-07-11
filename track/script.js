@@ -301,11 +301,11 @@ function createSlug(name) {
 
     return name
         .toLowerCase()
-        .replace(/&/g, "")
-        .replace(/\/+/g, "")
-        .replace(/[^a-z0-9 ]/g, "")
+        .replace(/&/g, "and")              // & → and
+        .replace(/[^a-z0-9,'./? ]/g, "")   // разрешаем запятые, апострофы, точки, слеши и вопросительные знаки
         .trim()
-        .replace(/\s+/g, "-");
+        .replace(/\s+/g, "-")              // пробелы → -
+        .replace(/--+/g, "-");             // убираем множественные дефисы
 
 }
 
