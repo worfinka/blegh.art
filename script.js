@@ -207,11 +207,11 @@ async function showNoNews() {
         "No anniversary today.";
 
     document.getElementById("news-description").innerHTML =
-        `But you should listen to <strong>${track}</strong> from <strong><a href="${album.id}/" <span style="color:${color}">${album.title}</span></a></strong>`;
+        `But you should listen to <strong>${track.title}</strong> from <strong><a href="${album.id}/" <span style="color:${color}">${album.title}</span></a></strong>`;
 
     const links = document.getElementById("news-links");
 
-    const query = encodeURIComponent(`${track} Architects`);
+    const query = encodeURIComponent(`${track.title} Architects`);
 
     links.innerHTML = `
         <a href="https://open.spotify.com/search/${query}" target="_blank">
