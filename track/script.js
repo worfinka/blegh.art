@@ -347,7 +347,7 @@ function createReference(reference) {
         "reference-button";
 
     button.textContent =
-        reference.toQuote;
+        reference.fromQuote;
 
 
 
