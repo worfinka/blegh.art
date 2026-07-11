@@ -71,6 +71,17 @@ const albums = [
 /* P.S. I know I have tracklist.json and I dont need that but my ass is too lazy to change the entire code */
 
 /* random quote */
+function createSlug(name) {
+
+    return name
+        .toLowerCase()
+        .replace(/&/g, "")
+        .replace(/\/+/g, "")
+        .replace(/[^a-z0-9 ]/g, "")
+        .trim()
+        .replace(/\s+/g, "-");
+
+}
 
 async function loadQuotes() {
 
@@ -199,6 +210,7 @@ async function showNoNews() {
         albums.find(a =>
             a.name === album.title
         )?.color || "#ffffff";
+    const trackSlug = createSlug(track.title);
 
     document.getElementById("news-image").src =
         `images/albums/${album.id}.jpg`;
@@ -207,7 +219,7 @@ async function showNoNews() {
         "No anniversary today.";
 
     document.getElementById("news-description").innerHTML =
-        `But you should listen to <strong>${track.title}</strong> from <strong><a href="${album.id}/" <span style="color:${color}">${album.title}</span></a></strong>`;
+        `But you should listen to <strong><a href="/track?s=${trackSlug}" style="color:${color}">${track.title}</a></strong> from <strong><a href="${album.id}/" <span style="color:${color}">${album.title}</span></a></strong>`;
 
     const links = document.getElementById("news-links");
 
