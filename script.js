@@ -75,11 +75,11 @@ function createSlug(name) {
 
     return name
         .toLowerCase()
-        .replace(/&/g, "")
-        .replace(/\/+/g, "")
-        .replace(/[^a-z0-9 ]/g, "")
+        .replace(/&/g, "and")        // & → and
+        .replace(/\//g, "-")         // / → -
+        .replace(/[^a-z0-9, ]/g, "") // разрешаем запятые
         .trim()
-        .replace(/\s+/g, "-");
+        .replace(/\s+/g, "-");       // пробелы → -
 
 }
 
