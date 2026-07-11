@@ -5,210 +5,1185 @@
       "title": "Nightmares",
       "year": 2006,
       "tracks": [
-        "To The Death",
-        "You Don't Walk Away From Dismemberment",
-        "Minesweeper",
-        "They'll Be Hanging Us Tonight",
-        "This Confession Means Nothing",
-        "In The Desert",
-        "A Portrait For The Deceased",
-        "The Darkest Tomb"
+        {
+          "title": "To The Death",
+          "length": "3:31",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Nightmares'.",
+          "description": [
+            "'To The Death' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'To The Death' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "You Don't Walk Away From Dismemberment",
+          "length": "5:03",
+          "short": "A powerful track exploring themes of mental health from the album 'Nightmares'.",
+          "description": [
+            "'You Don't Walk Away From Dismemberment' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'You Don't Walk Away From Dismemberment' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health."
+          ]
+        },
+        {
+          "title": "Minesweeper",
+          "length": "5:16",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Nightmares'.",
+          "description": [
+            "'Minesweeper' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Minesweeper' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection."
+          ]
+        },
+        {
+          "title": "They'll Be Hanging Us Tonight",
+          "length": "4:09",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Nightmares'.",
+          "description": [
+            "'They'll Be Hanging Us Tonight' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "This Confession Means Nothing",
+          "length": "3:34",
+          "short": "A powerful track exploring themes of political turmoil from the album 'Nightmares'.",
+          "description": [
+            "'This Confession Means Nothing' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'This Confession Means Nothing' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "In The Desert",
+          "length": "5:10",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Nightmares'.",
+          "description": [
+            "'In The Desert' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'In The Desert' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "A Portrait For The Deceased",
+          "length": "4:35",
+          "short": "A powerful track exploring themes of personal struggle from the album 'Nightmares'.",
+          "description": [
+            "'A Portrait For The Deceased' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'A Portrait For The Deceased' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "The Darkest Tomb",
+          "length": "3:32",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Nightmares'.",
+          "description": [
+            "'The Darkest Tomb' is a compelling track from Architects' 2006 album 'Nightmares'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        }
       ]
     },
-
     {
       "id": "ruin",
       "title": "Ruin",
       "year": 2007,
       "tracks": [
-        "Buried At Sea",
-        "Hunt Them Down",
-        "You'll Find Safety",
-        "Always",
-        "Sail This Ship Alone",
-        "Heartless",
-        "North Lane",
-        "I Can't See The Light",
-        "Low",
-        "Running From The Sun",
-        "Save Me",
-        "Broken Clocks"
+        {
+          "title": "Buried At Sea",
+          "length": "5:39",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Ruin'.",
+          "description": [
+            "'Buried At Sea' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Buried At Sea' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief."
+          ]
+        },
+        {
+          "title": "Hunt Them Down",
+          "length": "5:59",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Ruin'.",
+          "description": [
+            "'Hunt Them Down' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Hunt Them Down' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "You'll Find Safety",
+          "length": "5:07",
+          "short": "A powerful track exploring themes of resilience from the album 'Ruin'.",
+          "description": [
+            "'You'll Find Safety' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Always",
+          "length": "3:41",
+          "short": "A powerful track exploring themes of personal struggle from the album 'Ruin'.",
+          "description": [
+            "'Always' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Always' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "Sail This Ship Alone",
+          "length": "4:38",
+          "short": "A powerful track exploring themes of mental health from the album 'Ruin'.",
+          "description": [
+            "'Sail This Ship Alone' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Sail This Ship Alone' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Heartless",
+          "length": "3:34",
+          "short": "A powerful track exploring themes of existential dread from the album 'Ruin'.",
+          "description": [
+            "'Heartless' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Heartless' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "North Lane",
+          "length": "5:25",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Ruin'.",
+          "description": [
+            "'North Lane' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'North Lane' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "I Can't See The Light",
+          "length": "4:05",
+          "short": "A powerful track exploring themes of resilience from the album 'Ruin'.",
+          "description": [
+            "'I Can't See The Light' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'I Can't See The Light' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience."
+          ]
+        },
+        {
+          "title": "Low",
+          "length": "4:35",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Ruin'.",
+          "description": [
+            "'Low' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Low' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Running From The Sun",
+          "length": "3:57",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Ruin'.",
+          "description": [
+            "'Running From The Sun' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Running From The Sun' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Save Me",
+          "length": "3:00",
+          "short": "A powerful track exploring themes of political turmoil from the album 'Ruin'.",
+          "description": [
+            "'Save Me' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Save Me' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Broken Clocks",
+          "length": "4:08",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Ruin'.",
+          "description": [
+            "'Broken Clocks' is a compelling track from Architects' 2007 album 'Ruin'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Broken Clocks' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        }
       ]
     },
-
     {
       "id": "hollowcrown",
       "title": "Hollow Crown",
       "year": 2009,
       "tracks": [
-        "Early Grave",
-        "Dethroned",
-        "Numbers Count For Nothing",
-        "Follow The Water",
-        "In Elegance",
-        "We're All Alone",
-        "Borrowed Time",
-        "Every Last Breath",
-        "One Of These Days",
-        "Dead March",
-        "Left With A Last Minute",
-        "Hollow Crown"
+        {
+          "title": "Early Grave",
+          "length": "5:35",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Hollow Crown'.",
+          "description": [
+            "'Early Grave' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Early Grave' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Dethroned",
+          "length": "4:32",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Hollow Crown'.",
+          "description": [
+            "'Dethroned' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Dethroned' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Numbers Count For Nothing",
+          "length": "4:45",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Hollow Crown'.",
+          "description": [
+            "'Numbers Count For Nothing' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Follow The Water",
+          "length": "4:17",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Hollow Crown'.",
+          "description": [
+            "'Follow The Water' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "In Elegance",
+          "length": "4:53",
+          "short": "A powerful track exploring themes of existential dread from the album 'Hollow Crown'.",
+          "description": [
+            "'In Elegance' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'In Elegance' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "We're All Alone",
+          "length": "3:05",
+          "short": "A powerful track exploring themes of existential dread from the album 'Hollow Crown'.",
+          "description": [
+            "'We're All Alone' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Borrowed Time",
+          "length": "3:04",
+          "short": "A powerful track exploring themes of political turmoil from the album 'Hollow Crown'.",
+          "description": [
+            "'Borrowed Time' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Every Last Breath",
+          "length": "3:32",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Hollow Crown'.",
+          "description": [
+            "'Every Last Breath' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "One Of These Days",
+          "length": "5:14",
+          "short": "A powerful track exploring themes of personal struggle from the album 'Hollow Crown'.",
+          "description": [
+            "'One Of These Days' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'One Of These Days' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "Dead March",
+          "length": "5:31",
+          "short": "A powerful track exploring themes of personal struggle from the album 'Hollow Crown'.",
+          "description": [
+            "'Dead March' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Dead March' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Left With A Last Minute",
+          "length": "4:25",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Hollow Crown'.",
+          "description": [
+            "'Left With A Last Minute' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Hollow Crown",
+          "length": "5:50",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Hollow Crown'.",
+          "description": [
+            "'Hollow Crown' is a compelling track from Architects' 2009 album 'Hollow Crown'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Hollow Crown' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        }
       ]
     },
-
     {
       "id": "than",
       "title": "The Here And Now",
       "year": 2011,
       "tracks": [
-        "Day In Day Out",
-        "Learn To Live",
-        "Delete, Rewind",
-        "BTN",
-        "An Open Letter To Myself",
-        "The Blues",
-        "Red Eyes",
-        "Stay Young Forever",
-        "Heartburn",
-        "Year In Year Out / Up And Away"
+        {
+          "title": "Day In Day Out",
+          "length": "5:55",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Here And Now'.",
+          "description": [
+            "'Day In Day Out' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Day In Day Out' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection."
+          ]
+        },
+        {
+          "title": "Learn To Live",
+          "length": "3:59",
+          "short": "A powerful track exploring themes of personal struggle from the album 'The Here And Now'.",
+          "description": [
+            "'Learn To Live' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Learn To Live' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "Delete, Rewind",
+          "length": "3:25",
+          "short": "A powerful track exploring themes of personal struggle from the album 'The Here And Now'.",
+          "description": [
+            "'Delete, Rewind' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Delete, Rewind' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "BTN",
+          "length": "3:07",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Here And Now'.",
+          "description": [
+            "'BTN' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "An Open Letter To Myself",
+          "length": "5:16",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Here And Now'.",
+          "description": [
+            "'An Open Letter To Myself' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'An Open Letter To Myself' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "The Blues",
+          "length": "5:13",
+          "short": "A powerful track exploring themes of hope and despair from the album 'The Here And Now'.",
+          "description": [
+            "'The Blues' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Red Eyes",
+          "length": "4:27",
+          "short": "A powerful track exploring themes of loss and grief from the album 'The Here And Now'.",
+          "description": [
+            "'Red Eyes' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Red Eyes' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief."
+          ]
+        },
+        {
+          "title": "Stay Young Forever",
+          "length": "4:27",
+          "short": "A powerful track exploring themes of political turmoil from the album 'The Here And Now'.",
+          "description": [
+            "'Stay Young Forever' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Heartburn",
+          "length": "3:40",
+          "short": "A powerful track exploring themes of loss and grief from the album 'The Here And Now'.",
+          "description": [
+            "'Heartburn' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Heartburn' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief."
+          ]
+        },
+        {
+          "title": "Year In Year Out / Up And Away",
+          "length": "5:53",
+          "short": "A powerful track exploring themes of hope and despair from the album 'The Here And Now'.",
+          "description": [
+            "'Year In Year Out / Up And Away' is a compelling track from Architects' 2011 album 'The Here And Now'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        }
       ]
     },
-
     {
       "id": "daybreaker",
       "title": "Daybreaker",
       "year": 2012,
       "tracks": [
-        "The Bitter End",
-        "Alpha Omega",
-        "These Colours Don't Run",
-        "Daybreak",
-        "Truth, Be Told",
-        "Even If You Win, You're Still A Rat",
-        "Outsider Heart",
-        "Behind The Throne",
-        "Devil's Island",
-        "Feather Of Lead",
-        "Unbeliever"
+        {
+          "title": "The Bitter End",
+          "length": "4:56",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Daybreaker'.",
+          "description": [
+            "'The Bitter End' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'The Bitter End' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Alpha Omega",
+          "length": "3:52",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Daybreaker'.",
+          "description": [
+            "'Alpha Omega' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Alpha Omega' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "These Colours Don't Run",
+          "length": "3:33",
+          "short": "A powerful track exploring themes of resilience from the album 'Daybreaker'.",
+          "description": [
+            "'These Colours Don't Run' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Daybreak",
+          "length": "4:48",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Daybreaker'.",
+          "description": [
+            "'Daybreak' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Truth, Be Told",
+          "length": "3:16",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Daybreaker'.",
+          "description": [
+            "'Truth, Be Told' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Even If You Win, You're Still A Rat",
+          "length": "3:47",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Daybreaker'.",
+          "description": [
+            "'Even If You Win, You're Still A Rat' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Outsider Heart",
+          "length": "4:03",
+          "short": "A powerful track exploring themes of existential dread from the album 'Daybreaker'.",
+          "description": [
+            "'Outsider Heart' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Outsider Heart' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Behind The Throne",
+          "length": "5:29",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Daybreaker'.",
+          "description": [
+            "'Behind The Throne' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Devil's Island",
+          "length": "5:52",
+          "short": "A powerful track exploring themes of mental health from the album 'Daybreaker'.",
+          "description": [
+            "'Devil's Island' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Feather Of Lead",
+          "length": "4:19",
+          "short": "A powerful track exploring themes of mental health from the album 'Daybreaker'.",
+          "description": [
+            "'Feather Of Lead' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Unbeliever",
+          "length": "5:09",
+          "short": "A powerful track exploring themes of resilience from the album 'Daybreaker'.",
+          "description": [
+            "'Unbeliever' is a compelling track from Architects' 2012 album 'Daybreaker'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        }
       ]
     },
-
     {
       "id": "lflt",
       "title": "Lost Forever // Lost Together",
       "year": 2014,
       "tracks": [
-        "Gravedigger",
-        "Naysayer",
-        "Broken Cross",
-        "The Devil Is Near",
-        "Dead Man Talking",
-        "Red Hypergiant",
-        "C.A.N.C.E.R.",
-        "Colony Collapse",
-        "Castles In The Air",
-        "Youth Is Wasted On The Young",
-        "The Distant Blue"
+        {
+          "title": "Gravedigger",
+          "length": "3:28",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Gravedigger' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Gravedigger' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "Naysayer",
+          "length": "3:32",
+          "short": "A powerful track exploring themes of personal struggle from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Naysayer' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Naysayer' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        },
+        {
+          "title": "Broken Cross",
+          "length": "5:36",
+          "short": "A powerful track exploring themes of resilience from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Broken Cross' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "The Devil Is Near",
+          "length": "5:10",
+          "short": "A powerful track exploring themes of existential dread from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'The Devil Is Near' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Dead Man Talking",
+          "length": "5:11",
+          "short": "A powerful track exploring themes of political turmoil from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Dead Man Talking' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Red Hypergiant",
+          "length": "4:14",
+          "short": "A powerful track exploring themes of political turmoil from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Red Hypergiant' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Red Hypergiant' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "C.A.N.C.E.R.",
+          "length": "4:44",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'C.A.N.C.E.R.' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Colony Collapse",
+          "length": "5:19",
+          "short": "A powerful track exploring themes of self-reflection from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Colony Collapse' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Castles In The Air",
+          "length": "3:05",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Castles In The Air' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Castles In The Air' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Youth Is Wasted On The Young",
+          "length": "4:36",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'Youth Is Wasted On The Young' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Youth Is Wasted On The Young' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "The Distant Blue",
+          "length": "5:37",
+          "short": "A powerful track exploring themes of mental health from the album 'Lost Forever // Lost Together'.",
+          "description": [
+            "'The Distant Blue' is a compelling track from Architects' 2014 album 'Lost Forever // Lost Together'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        }
       ]
     },
-
     {
       "id": "aoghau",
       "title": "All Our Gods Have Abandoned Us",
       "year": 2016,
       "tracks": [
-        "Nihilist",
-        "Deathwish",
-        "Phantom Fear",
-        "Downfall",
-        "Gone With The Wind",
-        "The Empty Hourglass",
-        "A Match Made In Heaven",
-        "Gravity",
-        "All Love Is Lost",
-        "From The Wilderness",
-        "Memento Mori"
+        {
+          "title": "Nihilist",
+          "length": "3:15",
+          "short": "A powerful track exploring themes of mental health from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Nihilist' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Nihilist' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Deathwish",
+          "length": "3:51",
+          "short": "A powerful track exploring themes of hope and despair from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Deathwish' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Deathwish' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "Phantom Fear",
+          "length": "4:33",
+          "short": "A powerful track exploring themes of societal criticism from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Phantom Fear' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Downfall",
+          "length": "5:02",
+          "short": "A powerful track exploring themes of hope and despair from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Downfall' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Gone With The Wind",
+          "length": "4:30",
+          "short": "A powerful track exploring themes of self-reflection from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Gone With The Wind' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "The Empty Hourglass",
+          "length": "3:51",
+          "short": "A powerful track exploring themes of hope and despair from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'The Empty Hourglass' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'The Empty Hourglass' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "A Match Made In Heaven",
+          "length": "5:50",
+          "short": "A powerful track exploring themes of self-reflection from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'A Match Made In Heaven' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'A Match Made In Heaven' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Gravity",
+          "length": "5:31",
+          "short": "A powerful track exploring themes of loss and grief from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Gravity' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "All Love Is Lost",
+          "length": "5:02",
+          "short": "A powerful track exploring themes of societal criticism from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'All Love Is Lost' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'All Love Is Lost' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "From The Wilderness",
+          "length": "3:22",
+          "short": "A powerful track exploring themes of resilience from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'From The Wilderness' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'From The Wilderness' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience."
+          ]
+        },
+        {
+          "title": "Memento Mori",
+          "length": "5:45",
+          "short": "A powerful track exploring themes of societal criticism from the album 'All Our Gods Have Abandoned Us'.",
+          "description": [
+            "'Memento Mori' is a compelling track from Architects' 2016 album 'All Our Gods Have Abandoned Us'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Memento Mori' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        }
       ]
     },
-
     {
       "id": "holyhell",
       "title": "Holy Hell",
       "year": 2018,
       "tracks": [
-        "Death Is Not Defeat",
-        "Hereafter",
-        "Mortal After All",
-        "Holy Hell",
-        "Damnation",
-        "Royal Beggars",
-        "Modern Misery",
-        "Dying To Heal",
-        "The Seventh Circle",
-        "Doomsday",
-        "A Wasted Hymn"
+        {
+          "title": "Death Is Not Defeat",
+          "length": "3:24",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Holy Hell'.",
+          "description": [
+            "'Death Is Not Defeat' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Hereafter",
+          "length": "3:14",
+          "short": "A powerful track exploring themes of societal criticism from the album 'Holy Hell'.",
+          "description": [
+            "'Hereafter' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Mortal After All",
+          "length": "5:27",
+          "short": "A powerful track exploring themes of existential dread from the album 'Holy Hell'.",
+          "description": [
+            "'Mortal After All' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Holy Hell",
+          "length": "5:53",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Holy Hell'.",
+          "description": [
+            "'Holy Hell' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Holy Hell' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Damnation",
+          "length": "4:20",
+          "short": "A powerful track exploring themes of resilience from the album 'Holy Hell'.",
+          "description": [
+            "'Damnation' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Royal Beggars",
+          "length": "4:43",
+          "short": "A powerful track exploring themes of hope and despair from the album 'Holy Hell'.",
+          "description": [
+            "'Royal Beggars' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Modern Misery",
+          "length": "3:49",
+          "short": "A powerful track exploring themes of mental health from the album 'Holy Hell'.",
+          "description": [
+            "'Modern Misery' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Modern Misery' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health."
+          ]
+        },
+        {
+          "title": "Dying To Heal",
+          "length": "5:10",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Holy Hell'.",
+          "description": [
+            "'Dying To Heal' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "The Seventh Circle",
+          "length": "5:52",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Holy Hell'.",
+          "description": [
+            "'The Seventh Circle' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'The Seventh Circle' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief."
+          ]
+        },
+        {
+          "title": "Doomsday",
+          "length": "4:58",
+          "short": "A powerful track exploring themes of loss and grief from the album 'Holy Hell'.",
+          "description": [
+            "'Doomsday' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Doomsday' delves into themes of loss and grief, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of loss and grief."
+          ]
+        },
+        {
+          "title": "A Wasted Hymn",
+          "length": "3:27",
+          "short": "A powerful track exploring themes of resilience from the album 'Holy Hell'.",
+          "description": [
+            "'A Wasted Hymn' is a compelling track from Architects' 2018 album 'Holy Hell'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'A Wasted Hymn' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience."
+          ]
+        }
       ]
     },
-
     {
       "id": "fttwte",
       "title": "For Those That Wish To Exist",
       "year": 2021,
       "tracks": [
-        "Do You Dream Of Armageddon?",
-        "Black Lungs",
-        "Giving Blood",
-        "Discourse Is Dead",
-        "Dead Butterflies",
-        "An Ordinary Extinction",
-        "Impermanence",
-        "Flight Without Feathers",
-        "Little Wonder",
-        "Animals",
-        "Libertine",
-        "Goliath",
-        "Demi God",
-        "Meteor",
-        "Dying Is Absolutely Safe"
+        {
+          "title": "Do You Dream Of Armageddon?",
+          "length": "4:20",
+          "short": "A powerful track exploring themes of political turmoil from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Do You Dream Of Armageddon?' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Do You Dream Of Armageddon?' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "Black Lungs",
+          "length": "3:28",
+          "short": "A powerful track exploring themes of personal struggle from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Black Lungs' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Black Lungs' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Giving Blood",
+          "length": "4:02",
+          "short": "A powerful track exploring themes of mental health from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Giving Blood' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Giving Blood' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Discourse Is Dead",
+          "length": "4:18",
+          "short": "A powerful track exploring themes of hope and despair from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Discourse Is Dead' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Discourse Is Dead' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "Dead Butterflies",
+          "length": "5:49",
+          "short": "A powerful track exploring themes of societal criticism from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Dead Butterflies' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Dead Butterflies' delves into themes of societal criticism, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of societal criticism."
+          ]
+        },
+        {
+          "title": "An Ordinary Extinction",
+          "length": "5:33",
+          "short": "A powerful track exploring themes of political turmoil from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'An Ordinary Extinction' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'An Ordinary Extinction' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "Impermanence",
+          "length": "4:21",
+          "short": "A powerful track exploring themes of self-reflection from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Impermanence' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Flight Without Feathers",
+          "length": "3:28",
+          "short": "A powerful track exploring themes of personal struggle from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Flight Without Feathers' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Flight Without Feathers' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Little Wonder",
+          "length": "3:11",
+          "short": "A powerful track exploring themes of self-reflection from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Little Wonder' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Little Wonder' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Animals",
+          "length": "5:46",
+          "short": "A powerful track exploring themes of hope and despair from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Animals' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Animals' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "Libertine",
+          "length": "4:25",
+          "short": "A powerful track exploring themes of political turmoil from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Libertine' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Libertine' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "Goliath",
+          "length": "4:19",
+          "short": "A powerful track exploring themes of personal struggle from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Goliath' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Demi God",
+          "length": "5:10",
+          "short": "A powerful track exploring themes of political turmoil from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Demi God' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Demi God' delves into themes of political turmoil, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of political turmoil."
+          ]
+        },
+        {
+          "title": "Meteor",
+          "length": "5:44",
+          "short": "A powerful track exploring themes of resilience from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Meteor' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Meteor' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience."
+          ]
+        },
+        {
+          "title": "Dying Is Absolutely Safe",
+          "length": "5:42",
+          "short": "A powerful track exploring themes of self-reflection from the album 'For Those That Wish To Exist'.",
+          "description": [
+            "'Dying Is Absolutely Safe' is a compelling track from Architects' 2021 album 'For Those That Wish To Exist'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        }
       ]
     },
-
     {
       "id": "tcsoabs",
       "title": "The Classic Symptoms Of A Broken Spirit",
       "year": 2022,
       "tracks": [
-        "Deep Fake",
-        "Tear Gas",
-        "Spit The Bone",
-        "Burn Down My House",
-        "Living Is Killing Us",
-        "When We Were Young",
-        "Doomscrolling",
-        "Born Again Pessimist",
-        "A New Moral Low Ground",
-        "All The Love In The World",
-        "Be Very Afraid"
+        {
+          "title": "Deep Fake",
+          "length": "5:34",
+          "short": "A powerful track exploring themes of mental health from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Deep Fake' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Deep Fake' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health."
+          ]
+        },
+        {
+          "title": "Tear Gas",
+          "length": "3:28",
+          "short": "A powerful track exploring themes of personal struggle from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Tear Gas' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Tear Gas' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Spit The Bone",
+          "length": "5:58",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Spit The Bone' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Spit The Bone' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "Burn Down My House",
+          "length": "5:14",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Burn Down My House' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Burn Down My House' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Living Is Killing Us",
+          "length": "4:54",
+          "short": "A powerful track exploring themes of hope and despair from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Living Is Killing Us' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Living Is Killing Us' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "When We Were Young",
+          "length": "4:02",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'When We Were Young' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Doomscrolling",
+          "length": "3:29",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Doomscrolling' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Doomscrolling' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "Born Again Pessimist",
+          "length": "4:21",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Born Again Pessimist' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Born Again Pessimist' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "A New Moral Low Ground",
+          "length": "3:21",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'A New Moral Low Ground' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "All The Love In The World",
+          "length": "3:14",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'All The Love In The World' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'All The Love In The World' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection."
+          ]
+        },
+        {
+          "title": "Be Very Afraid",
+          "length": "3:33",
+          "short": "A powerful track exploring themes of personal struggle from the album 'The Classic Symptoms Of A Broken Spirit'.",
+          "description": [
+            "'Be Very Afraid' is a compelling track from Architects' 2022 album 'The Classic Symptoms Of A Broken Spirit'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Be Very Afraid' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle."
+          ]
+        }
       ]
     },
-
     {
       "id": "tste&ab",
       "title": "The Sky, The Earth & All Between",
       "year": 2025,
       "tracks": [
-        "Elegy",
-        "Whiplash",
-        "Blackhole",
-        "Everything Ends",
-        "Brain Dead",
-        "Evil Eyes",
-        "Landmines",
-        "Judgement Day",
-        "Broken Mirror",
-        "Curse",
-        "Seeing Red",
-        "Chandelier"
+        {
+          "title": "Elegy",
+          "length": "4:50",
+          "short": "A powerful track exploring themes of personal struggle from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Elegy' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Elegy' delves into themes of personal struggle, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of personal struggle.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        },
+        {
+          "title": "Whiplash",
+          "length": "3:06",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Whiplash' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Blackhole",
+          "length": "4:59",
+          "short": "A powerful track exploring themes of mental health from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Blackhole' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Blackhole' delves into themes of mental health, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of mental health."
+          ]
+        },
+        {
+          "title": "Everything Ends",
+          "length": "5:51",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Everything Ends' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Brain Dead",
+          "length": "5:15",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Brain Dead' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Brain Dead' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "Evil Eyes",
+          "length": "5:13",
+          "short": "A powerful track exploring themes of mental health from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Evil Eyes' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound."
+          ]
+        },
+        {
+          "title": "Landmines",
+          "length": "4:03",
+          "short": "A powerful track exploring themes of hope and despair from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Landmines' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Landmines' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "Judgement Day",
+          "length": "5:44",
+          "short": "A powerful track exploring themes of existential dread from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Judgement Day' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Judgement Day' delves into themes of existential dread, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of existential dread."
+          ]
+        },
+        {
+          "title": "Broken Mirror",
+          "length": "3:40",
+          "short": "A powerful track exploring themes of self-reflection from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Broken Mirror' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Broken Mirror' delves into themes of self-reflection, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of self-reflection."
+          ]
+        },
+        {
+          "title": "Curse",
+          "length": "3:42",
+          "short": "A powerful track exploring themes of hope and despair from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Curse' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Curse' delves into themes of hope and despair, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of hope and despair."
+          ]
+        },
+        {
+          "title": "Seeing Red",
+          "length": "5:47",
+          "short": "A powerful track exploring themes of resilience from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Seeing Red' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Seeing Red' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience."
+          ]
+        },
+        {
+          "title": "Chandelier",
+          "length": "4:09",
+          "short": "A powerful track exploring themes of resilience from the album 'The Sky, The Earth & All Between'.",
+          "description": [
+            "'Chandelier' is a compelling track from Architects' 2025 album 'The Sky, The Earth & All Between'. The song features the band's signature blend of crushing metalcore riffs and melodic passages, showcasing their evolution as musicians while maintaining their distinctive sound.",
+            "Lyrically, 'Chandelier' delves into themes of resilience, with frontman Sam Carter delivering emotionally charged vocals that range from guttural screams to haunting clean singing. The lyrics paint a vivid picture of resilience.",
+            "Musically, the track is built around technical guitar work from Josh Middleton, driven by Dan Searle's intricate drum patterns, and anchored by heavy bass lines. 'The song exemplifies why Architects remain at the forefront of the modern metalcore scene."
+          ]
+        }
       ]
     }
   ]
