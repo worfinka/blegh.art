@@ -47,14 +47,6 @@ function updateMetaTags() {
     updateOrCreateMetaTag('og:description', description);
     updateOrCreateMetaTag('og:image', imageUrl);
     updateOrCreateMetaTag('og:url', `https://blegh.art/track?s=${createSlug(currentTrack.title)}`);
-    updateOrCreateMetaTag('og:type', 'music.song');
-
-    updateOrCreateMetaTag('twitter:card', 'summary_large_image');
-    updateOrCreateMetaTag('twitter:title', `${currentTrack.title} - blegh.art`);
-    updateOrCreateMetaTag('twitter:description', description);
-    updateOrCreateMetaTag('twitter:image', imageUrl);
-
-    updateOrCreateMetaTag('theme-color', albumColor);
     
 }
 
