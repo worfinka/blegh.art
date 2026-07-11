@@ -268,7 +268,7 @@
 
     position:fixed;
 
-    top:32px;
+    top:-500px;
     right:45px;
 
     height:calc(100vh - 64px);
