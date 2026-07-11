@@ -74,7 +74,7 @@ function findTrack(trackName) {
 function updateTitle() {
 
     document.title =
-        `${currentTrack.title} • blegh.art`;
+        `${currentTrack.title} - blegh.art`;
 
 }
 
