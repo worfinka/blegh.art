@@ -336,10 +336,21 @@ function createReference(reference) {
     wrapper.className =
         "reference";
 
+    /* Определяем, какая цитата принадлежит текущему треку */
+    let currentQuote = "";
 
+    if (reference.fromTrack === currentTrack.title) {
+        // Текущий трек - источник (исходящая отсылка)
+        currentQuote = reference.fromQuote;
+    } else if (reference.toTrack === currentTrack.title) {
+        // Текущий трек - цель (входящая отсылка)
+        currentQuote = reference.toQuote;
+    } else {
+        // На всякий случай
+        currentQuote = reference.fromQuote;
+    }
 
-    /* button */
-
+    /* button - показывает цитату из текущего трека */
     const button =
         document.createElement("div");
 
@@ -347,19 +358,14 @@ function createReference(reference) {
         "reference-button";
 
     button.textContent =
-        reference.fromQuote;
-
-
+        currentQuote;
 
     /* content */
-
     const content =
         document.createElement("div");
 
     content.className =
         "reference-content";
-
-
 
     content.innerHTML = `
 
@@ -387,15 +393,11 @@ function createReference(reference) {
 
         </div>
 
-
-
         <div class="reference-arrow">
 
             ↓
 
         </div>
-
-
 
         <div class="reference-row">
 
@@ -423,8 +425,6 @@ function createReference(reference) {
 
     `;
 
-
-
     button.addEventListener("click", () => {
 
         document
@@ -442,8 +442,6 @@ function createReference(reference) {
         content.classList.add("active");
 
     });
-
-
 
     wrapper.appendChild(button);
 
