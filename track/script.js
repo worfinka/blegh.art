@@ -34,6 +34,53 @@ async function loadTrackDatabase() {
 }
 
 
+
+function updateMetaTags() {
+
+    const albumColor = albums.find(a => a.name === currentAlbum.title)?.color || "#ffffff";
+    
+    const imageUrl = `https://blegh.art/images/albums/${currentAlbum.id}.jpg`;
+
+    const description = currentTrack.short || currentTrack.description?.[0] || `${currentTrack.title} from Architects' album ${currentAlbum.title}`;
+
+    updateOrCreateMetaTag('og:title', `${currentTrack.title} - blegh.art`);
+    updateOrCreateMetaTag('og:description', description);
+    updateOrCreateMetaTag('og:image', imageUrl);
+    updateOrCreateMetaTag('og:url', `https://blegh.art/track?s=${createSlug(currentTrack.title)}`);
+    updateOrCreateMetaTag('og:type', 'music.song');
+
+    updateOrCreateMetaTag('twitter:card', 'summary_large_image');
+    updateOrCreateMetaTag('twitter:title', `${currentTrack.title} - blegh.art`);
+    updateOrCreateMetaTag('twitter:description', description);
+    updateOrCreateMetaTag('twitter:image', imageUrl);
+
+    updateOrCreateMetaTag('theme-color', albumColor);
+    
+}
+
+function updateOrCreateMetaTag(property, content) {
+
+    let meta = document.querySelector(`meta[property="${property}"], meta[name="${property}"]`);
+    
+    if (meta) {
+
+        meta.content = content;
+    } else {
+
+        meta = document.createElement('meta');
+
+        if (property.startsWith('og:') || property.startsWith('twitter:')) {
+            meta.setAttribute('property', property);
+        } else {
+            meta.setAttribute('name', property);
+        }
+        
+        meta.content = content;
+        document.head.appendChild(meta);
+    }
+
+}
+
 /* =========================================
    FIND TRACK
 ========================================= */
@@ -549,6 +596,8 @@ async function init() {
 
         loadCover();
 
+        updateMetaTags();
+       
         loadMeta();
 
         loadQuote();
