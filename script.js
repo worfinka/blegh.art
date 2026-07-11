@@ -77,9 +77,10 @@ function createSlug(name) {
         .toLowerCase()
         .replace(/&/g, "and")        // & → and
         .replace(/\//g, "-")         // / → -
-        .replace(/[^a-z0-9, ]/g, "") // разрешаем запятые
+        .replace(/[^a-z0-9,' ]/g, "") // разрешаем запятые и апострофы
         .trim()
-        .replace(/\s+/g, "-");       // пробелы → -
+        .replace(/\s+/g, "-")        // пробелы → -
+        .replace(/--+/g, "-");       // убираем множественные дефисы
 
 }
 
