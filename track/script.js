@@ -276,18 +276,11 @@ function showNotFound() {
 
 let referencesDatabase = null;
 
-
-/* =========================================
-   LOAD REFERENCES
-========================================= */
-
 async function loadReferencesDatabase() {
 
-    const response =
-        await fetch("../references.json");
+    const response = await fetch("../references.json");
 
-    referencesDatabase =
-        await response.json();
+    referencesDatabase = await response.json();
 
 }
 
@@ -308,99 +301,85 @@ function createSlug(name) {
 
 }
 
+function findAlbumId(trackTitle) {
 
+    for (const album of trackDatabase.albums) {
+
+        if (album.tracks.some(track => track.title === trackTitle)) {
+
+            return album.id;
+
+        }
+
+    }
+
+    return "placeholder";
+
+}
 /* =========================================
    CREATE REFERENCE CARD
 ========================================= */
 
-function createReference(reference) {
+function createReferenceCard(reference) {
 
-    const wrapper =
-        document.createElement("div");
+    const card = document.createElement("div");
+    card.className = "reference";
 
-    wrapper.className =
-        "reference";
+    card.innerHTML = `
 
+        <div class="reference-top">
 
-
-    /* button */
-
-    const button =
-        document.createElement("div");
-
-    button.className =
-        "reference-button";
-
-    button.textContent =
-        reference.toQuote;
-
-
-
-    /* content */
-
-    const content =
-        document.createElement("div");
-
-    content.className =
-        "reference-content";
-
-
-
-    content.innerHTML = `
-
-        <div class="reference-row">
+            <img
+                src="../images/albums/${findAlbumId(reference.fromTrack)}.jpg"
+                class="reference-cover">
 
             <div>
 
-                <a class="reference-track"
-
-                   href="?s=${createSlug(reference.fromTrack)}">
+                <a
+                    href="?s=${createSlug(reference.fromTrack)}"
+                    class="reference-track">
 
                     ${reference.fromTrack}
 
                 </a>
 
-                <br>
-
-                <span class="reference-lyrics">
+                <div class="reference-quote">
 
                     "${reference.fromQuote}"
 
-                </span>
+                </div>
 
             </div>
 
         </div>
 
-
-
         <div class="reference-arrow">
 
-            ↓
+            →
 
         </div>
 
+        <div class="reference-bottom">
 
-
-        <div class="reference-row">
+            <img
+                src="../images/albums/${findAlbumId(reference.toTrack)}.jpg"
+                class="reference-cover">
 
             <div>
 
-                <a class="reference-track"
-
-                   href="?s=${createSlug(reference.toTrack)}">
+                <a
+                    href="?s=${createSlug(reference.toTrack)}"
+                    class="reference-track">
 
                     ${reference.toTrack}
 
                 </a>
 
-                <br>
-
-                <span class="reference-lyrics">
+                <div class="reference-quote">
 
                     "${reference.toQuote}"
 
-                </span>
+                </div>
 
             </div>
 
@@ -408,33 +387,7 @@ function createReference(reference) {
 
     `;
 
-
-
-    button.addEventListener("click", () => {
-
-        document
-            .querySelectorAll(".reference-content")
-            .forEach(item =>
-                item.classList.remove("active"));
-
-        document
-            .querySelectorAll(".reference-button")
-            .forEach(item =>
-                item.classList.remove("active"));
-
-        button.classList.add("active");
-
-        content.classList.add("active");
-
-    });
-
-
-
-    wrapper.appendChild(button);
-
-    wrapper.appendChild(content);
-
-    return wrapper;
+    return card;
 
 }
 
@@ -450,59 +403,35 @@ function loadReferences() {
 
     container.innerHTML = "";
 
+    const track =
+        referencesDatabase.tracks[currentTrack.title];
 
-
-    if (!referencesDatabase.tracks[currentTrack.title]) {
+    if (!track || !track.quotes.length) {
 
         container.innerHTML =
-            "<p>No references found.</p>";
+            "<p>No references.</p>";
 
         return;
 
     }
 
-
-
-    const trackReferences =
-        referencesDatabase.tracks[currentTrack.title];
-
-
-
-    trackReferences.quotes.forEach(quote => {
+    track.quotes.forEach(item => {
 
         const reference =
             referencesDatabase.references.find(ref =>
-
-                ref.id === quote.referenceId
-
+                ref.id === item.referenceId
             );
 
-
-
-        if (!reference) return;
-
-
+        if (!reference)
+            return;
 
         container.appendChild(
 
-            createReference(reference)
+            createReferenceCard(reference)
 
         );
 
     });
-
-
-
-    /* open first */
-
-    const firstButton =
-        container.querySelector(".reference-button");
-
-    if (firstButton) {
-
-        firstButton.click();
-
-    }
 
 }
 
