@@ -75,12 +75,11 @@ function createSlug(name) {
 
     return name
         .toLowerCase()
-        .replace(/&/g, "and")          // & → and
-        .replace(/\//g, "-")           // / → -
-        .replace(/[^a-z0-9,'. ]/g, "") // разрешаем запятые, апострофы и точки
+        .replace(/&/g, "and")              // & → and
+        .replace(/[^a-z0-9,'./? ]/g, "")   // разрешаем запятые, апострофы, точки, слеши и вопросительные знаки
         .trim()
-        .replace(/\s+/g, "-")          // пробелы → -
-        .replace(/--+/g, "-");         // убираем множественные дефисы
+        .replace(/\s+/g, "-")              // пробелы → -
+        .replace(/--+/g, "-");             // убираем множественные дефисы
 }
 
 async function loadQuotes() {
