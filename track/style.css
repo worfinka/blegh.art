@@ -269,7 +269,7 @@
     position:fixed;
 
     top:-500px;
-    right:90px;
+    right:100px;
 
     height:calc(100vh - 64px);
 
@@ -281,7 +281,7 @@
 
     white-space:nowrap;
 
-    font-size:150px;
+    font-size:120px;
     font-weight:700;
     line-height:0.9;
 
