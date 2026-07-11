@@ -57,9 +57,7 @@ function findTrack(trackName) {
 
             currentAlbum = album;
 
-            currentTrack = {
-                title: found
-            };
+            currentTrack = found;
 
             return true;
 
