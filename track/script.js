@@ -66,18 +66,11 @@ const albums = [
         color: "#94A7B6"
     }
 ];
-/* =========================================
-   blegh.art - track page
-========================================= */
+/* blegh.art - track page */
 
 let currentTrack = null;
 let currentAlbum = null;
 let trackDatabase = null;
-
-
-/* =========================================
-   URL
-========================================= */
 
 function getTrackSlug() {
 
@@ -85,11 +78,6 @@ function getTrackSlug() {
     return params.get("s");
 
 }
-
-
-/* =========================================
-   LOAD TRACKLIST
-========================================= */
 
 async function loadTrackDatabase() {
 
@@ -100,10 +88,6 @@ async function loadTrackDatabase() {
         await response.json();
 
 }
-
-/* =========================================
-   FIND TRACK
-========================================= */
 
 function findTrack(trackName) {
 
@@ -133,22 +117,12 @@ function findTrack(trackName) {
 
 }
 
-
-/* =========================================
-   PAGE TITLE
-========================================= */
-
 function updateTitle() {
 
     document.title =
         `${currentTrack.title} - blegh.art`;
 
 }
-
-
-/* =========================================
-   COVER
-========================================= */
 
 function loadCover() {
 
@@ -157,10 +131,6 @@ function loadCover() {
 
 }
 
-
-/* =========================================
-   META
-========================================= */
 
 function loadMeta() {
 
@@ -171,10 +141,6 @@ function loadMeta() {
         `${currentAlbum.title} (${currentAlbum.year})`;
 
 }
-
-/* =========================================
-   QUOTE
-========================================= */
 
 async function loadQuote() {
 
@@ -206,26 +172,12 @@ async function loadQuote() {
 
 }
 
-
-/* =========================================
-   SHORT DESCRIPTION
-========================================= */
-
 function loadShortDescription() {
 
     document.getElementById("track-short").textContent =
         currentTrack.short;
 
 }
-
-
-/* =========================================
-   DESCRIPTION
-========================================= */
-
-/* =========================================
-   LOAD DESCRIPTION with formatting
-========================================= */
 
 function loadDescription() {
 
@@ -241,22 +193,21 @@ function loadDescription() {
 
         p.style.marginBottom = "22px";
 
-        // Форматируем текст
         let formattedText = paragraph;
 
-        // 1. Обработка **жирный текст**
+        // 1. * *
         formattedText = formattedText.replace(
             /\*\*(.*?)\*\*/g,
             '<strong>$1</strong>'
         );
 
-        // 2. Обработка *курсив*
+        // 2. ** **
         formattedText = formattedText.replace(
             /\*(.*?)\*/g,
             '<em>$1</em>'
         );
 
-        // 3. Обработка _название_трека_ (гиперссылка)
+        // 3. _ _
         formattedText = formattedText.replace(
             /_(.*?)_/g,
             (match, trackName) => {
@@ -265,8 +216,6 @@ function loadDescription() {
                 return `<a href="/track?s=${slug}" style="color: ${color}; font-weight: 600;">${trackName}</a>`;
             }
         );
-
-        // Устанавливаем HTML
         p.innerHTML = formattedText;
 
         container.appendChild(p);
@@ -275,13 +224,8 @@ function loadDescription() {
 
 }
 
-/* =========================================
-   HELPER: GET ALBUM COLOR BY TRACK NAME
-========================================= */
-
 function getAlbumColorByTrack(trackName) {
 
-    // Ищем трек в trackDatabase
     for (const album of trackDatabase.albums) {
 
         const found = album.tracks.find(track =>
@@ -290,7 +234,6 @@ function getAlbumColorByTrack(trackName) {
 
         if (found) {
 
-            // Находим цвет альбома
             const albumData = albums.find(a =>
                 a.name === album.title
             );
@@ -301,7 +244,6 @@ function getAlbumColorByTrack(trackName) {
 
     }
 
-    // Если трек не найден, используем цвет текущего альбома
     const currentAlbumData = albums.find(a =>
         a.name === currentAlbum.title
     );
@@ -309,11 +251,6 @@ function getAlbumColorByTrack(trackName) {
     return currentAlbumData ? currentAlbumData.color : "#ffffff";
 
 }
-
-
-/* =========================================
-   LINKS
-========================================= */
 
 function loadLinks() {
 
@@ -333,11 +270,6 @@ function loadLinks() {
 
 }
 
-
-/* =========================================
-   RIGHT WALL
-========================================= */
-
 function createWall() {
 
     const wall =
@@ -347,11 +279,6 @@ function createWall() {
         `${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}${currentTrack.title.replace(/\s+/g, "").toUpperCase()}${currentAlbum.id.toUpperCase()}`;
 
 }
-
-
-/* =========================================
-   PARALLAX
-========================================= */
 
 function initParallax() {
 
@@ -366,11 +293,6 @@ function initParallax() {
     });
 
 }
-
-
-/* =========================================
-   NOT FOUND
-========================================= */
 
 function showNotFound() {
 
@@ -401,16 +323,7 @@ function showNotFound() {
 
 }
 
-/* =========================================
-   REFERENCES
-========================================= */
-
 let referencesDatabase = null;
-
-
-/* =========================================
-   LOAD REFERENCES
-========================================= */
 
 async function loadReferencesDatabase() {
 
@@ -422,21 +335,15 @@ async function loadReferencesDatabase() {
 
 }
 
-
-
-/* =========================================
-   SLUG
-========================================= */
-
 function createSlug(name) {
 
     return name
         .toLowerCase()
-        .replace(/&/g, "and")              // & → and
-        .replace(/[^a-z0-9,'./? ]/g, "")   // разрешаем запятые, апострофы, точки, слеши и вопросительные знаки
+        .replace(/&/g, "and")
+        .replace(/[^a-z0-9,'./? ]/g, "")
         .trim()
-        .replace(/\s+/g, "-")              // пробелы → -
-        .replace(/--+/g, "-");             // убираем множественные дефисы
+        .replace(/\s+/g, "-")
+        .replace(/--+/g, "-");
 
 }
 
@@ -455,9 +362,6 @@ function findAlbumId(trackTitle) {
     return "placeholder";
 
 }
-/* =========================================
-   CREATE REFERENCE CARD
-========================================= */
 
 function createReference(reference) {
 
@@ -467,21 +371,16 @@ function createReference(reference) {
     wrapper.className =
         "reference";
 
-    /* Определяем, какая цитата принадлежит текущему треку */
     let currentQuote = "";
 
     if (reference.fromTrack === currentTrack.title) {
-        // Текущий трек - источник (исходящая отсылка)
         currentQuote = reference.fromQuote;
     } else if (reference.toTrack === currentTrack.title) {
-        // Текущий трек - цель (входящая отсылка)
         currentQuote = reference.toQuote;
     } else {
-        // На всякий случай
         currentQuote = reference.fromQuote;
     }
 
-    /* button - показывает цитату из текущего трека */
     const button =
         document.createElement("div");
 
@@ -491,7 +390,6 @@ function createReference(reference) {
     button.textContent =
         currentQuote;
 
-    /* content */
     const content =
         document.createElement("div");
 
@@ -582,11 +480,6 @@ function createReference(reference) {
 
 }
 
-
-/* =========================================
-   BUILD REFERENCES
-========================================= */
-
 function loadReferences() {
 
     const container =
@@ -635,10 +528,6 @@ function loadReferences() {
 
     });
 
-
-
-    /* open first */
-
     const firstButton =
         container.querySelector(".reference-button");
 
@@ -650,9 +539,7 @@ function loadReferences() {
 
 }
 
-/* =========================================
-   INIT
-========================================= */
+/* init */
 
 async function init() {
 
@@ -722,11 +609,6 @@ document.addEventListener(
     "DOMContentLoaded",
     init
 );
-
-
-/* =========================================
-   YEAR
-========================================= */
 
 document.getElementById("copyright-year").textContent =
     new Date().getFullYear();
