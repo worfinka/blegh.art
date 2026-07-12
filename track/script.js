@@ -155,6 +155,10 @@ function loadShortDescription() {
    DESCRIPTION
 ========================================= */
 
+/* =========================================
+   LOAD DESCRIPTION with formatting
+========================================= */
+
 function loadDescription() {
 
     const container =
@@ -167,14 +171,74 @@ function loadDescription() {
         const p =
             document.createElement("p");
 
-        p.textContent =
-            paragraph;
-
         p.style.marginBottom = "22px";
+
+        // Форматируем текст
+        let formattedText = paragraph;
+
+        // 1. Обработка **жирный текст**
+        formattedText = formattedText.replace(
+            /\*\*(.*?)\*\*/g,
+            '<strong>$1</strong>'
+        );
+
+        // 2. Обработка *курсив*
+        formattedText = formattedText.replace(
+            /\*(.*?)\*/g,
+            '<em>$1</em>'
+        );
+
+        // 3. Обработка _название_трека_ (гиперссылка)
+        formattedText = formattedText.replace(
+            /_(.*?)_/g,
+            (match, trackName) => {
+                const slug = createSlug(trackName);
+                const color = getAlbumColorByTrack(trackName);
+                return `<a href="/track?s=${slug}" style="color: ${color}; text-decoration: underline; font-weight: 600;">${trackName}</a>`;
+            }
+        );
+
+        // Устанавливаем HTML
+        p.innerHTML = formattedText;
 
         container.appendChild(p);
 
     });
+
+}
+
+/* =========================================
+   HELPER: GET ALBUM COLOR BY TRACK NAME
+========================================= */
+
+function getAlbumColorByTrack(trackName) {
+
+    // Ищем трек в trackDatabase
+    for (const album of trackDatabase.albums) {
+
+        const found = album.tracks.find(track =>
+            track.title.toLowerCase() === trackName.toLowerCase()
+        );
+
+        if (found) {
+
+            // Находим цвет альбома
+            const albumData = albums.find(a =>
+                a.name === album.title
+            );
+
+            return albumData ? albumData.color : "#ffffff";
+
+        }
+
+    }
+
+    // Если трек не найден, используем цвет текущего альбома
+    const currentAlbumData = albums.find(a =>
+        a.name === currentAlbum.title
+    );
+
+    return currentAlbumData ? currentAlbumData.color : "#ffffff";
 
 }
 
