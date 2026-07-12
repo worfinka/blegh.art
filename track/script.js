@@ -1,3 +1,71 @@
+const albums = [
+    {
+        name: "Nightmares",
+        year: 2006,
+        slug: "nightmares",
+        color: "#EEA42B"
+    },
+    {
+        name: "Ruin",
+        year: 2007,
+        slug: "ruin",
+        color: "#C6C982"
+    },
+    {
+        name: "Hollow Crown",
+        year: 2009,
+        slug: "hollowcrown",
+        color: "#C5B97D"
+    },
+    {
+        name: "The Here And Now",
+        year: 2011,
+        slug: "than",
+        color: "#9DA192"
+    },
+    {
+        name: "Daybreaker",
+        year: 2012,
+        slug: "daybreaker",
+        color: "#EDEEDC"
+    },
+    {
+        name: "Lost Forever // Lost Together",
+        year: 2014,
+        slug: "lflt",
+        color: "#808080"
+    },
+    {
+        name: "All Our Gods Have Abandoned Us",
+        year: 2016,
+        slug: "aoghau",
+        color: "#F8F8F8"
+    },
+    {
+        name: "Holy Hell",
+        year: 2018,
+        slug: "holyhell",
+        color: "#9B9B9B"
+    },
+    {
+        name: "For Those That Wish To Exist",
+        year: 2021,
+        slug: "fttwte",
+        color: "#878C81"
+    },
+    {
+        name: "The Classic Symptoms Of A Broken Spirit",
+        year: 2022,
+        slug: "tcsoabs",
+        color: "#F6F5F0"
+    },
+    {
+        name: "The Sky, The Earth & All Between",
+        year: 2025,
+        slug: "tste&ab",
+        color: "#94A7B6"
+    }
+];
 /* =========================================
    blegh.art - track page
 ========================================= */
