@@ -131,6 +131,23 @@ function loadCover() {
 
 }
 
+function updateFavicon() {
+
+    let favicon = document.querySelector("link[rel='icon']");
+
+    if (!favicon) {
+
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(favicon);
+
+    }
+
+    favicon.type = "image/jpeg";
+    favicon.href = `../images/albums/${currentAlbum.id}.jpg?v=${Date.now()}`;
+
+}
+
 
 function loadMeta() {
 
@@ -566,6 +583,8 @@ async function init() {
         updateTitle();
 
         loadCover();
+
+        updateFavicon();
        
         loadMeta();
 
