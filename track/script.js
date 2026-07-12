@@ -262,7 +262,7 @@ function loadDescription() {
             (match, trackName) => {
                 const slug = createSlug(trackName);
                 const color = getAlbumColorByTrack(trackName);
-                return `<a href="/track?s=${slug}" style="color: ${color}; text-decoration: underline; font-weight: 600;">${trackName}</a>`;
+                return `<a href="/track?s=${slug}" style="color: ${color}; font-weight: 600;">${trackName}</a>`;
             }
         );
 
