@@ -116,7 +116,7 @@
         { "text": "Can you live a life worth dying for?", "referenceId": "ref11" },
         { "text": "God, what a sorry state", "referenceId": "ref24" },
         { "text": "I'll always carry the cross, but all is not lost", "referenceId": "ref34" },
-        { "text": "Now it's time to think or swim", "referenceId": "ref56" }
+        { "text": "Now it's time to sink or swim", "referenceId": "ref56" }
       ]
     },
     "Untitled": {
@@ -456,7 +456,7 @@
       "album": "The Here and Now",
       "year": 2011,
       "quotes": [
-        { "text": "I used to think and now I swim", "referenceId": "ref56" }
+        { "text": "I used to sink and now I swim", "referenceId": "ref56" }
       ]
     },
     "Delete, Rewind": {
