@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка .img файлов</title>
+    <style>
+        body { font-family: monospace; max-width: 900px; margin: 20px auto; padding: 10px; }
+        .input-group { margin: 15px 0; }
+        #output { white-space: pre-wrap; background: #f4f4f4; padding: 15px; border-radius: 5px; }
+        .warning { color: red; font-weight: bold; }
+        .safe { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Сравнение .img файлов</h1>
+    <p>Файлы обрабатываются <strong>локально в вашем браузере</strong>, никуда не загружаются.</p>
+
+    <div class="input-group">
+        <label>Оригинальный (basic.img): <input type="file" id="basicFile"></label>
+    </div>
+    <div class="input-group">
+        <label>Проверяемый (current.img): <input type="file" id="currentFile"></label>
+    </div>
+    <button onclick="compare()">Сравнить</button>
+
+    <div id="output">Выберите файлы и нажмите «Сравнить».</div>
+
+    <script>
+        // ---------- Поиск областей изображений ----------
+        function findImageRegions(data) {
+            const regions = [];
+            const n = data.length;
+            let i = 0;
+
+            while (i < n) {
+                // JPEG: FF D8 FF ... FF D9
+                if (i + 3 < n && data[i] === 0xFF && data[i+1] === 0xD8 && data[i+2] === 0xFF) {
+                    let end = -1;
+                    for (let j = i + 2; j < n - 1; j++) {
+                        if (data[j] === 0xFF && data[j+1] === 0xD9) { end = j + 2; break; }
+                    }
+                    if (end !== -1) {
+                        regions.push({ start: i, end: end, type: 'JPEG' });
+                        i = end;
+                        continue;
+                    }
+                }
+
+                // PNG: 89 50 4E 47 0D 0A 1A 0A ... IEND AE 42 60 82
+                if (i + 8 < n && data[i] === 0x89 && data[i+1] === 0x50 && data[i+2] === 0x4E && data[i+3] === 0x47 &&
+                    data[i+4] === 0x0D && data[i+5] === 0x0A && data[i+6] === 0x1A && data[i+7] === 0x0A) {
+                    const iend = [0x49, 0x45, 0x4E, 0x44, 0xAE, 0x42, 0x60, 0x82];
+                    let end = -1;
+                    for (let j = i + 8; j < n - 8; j++) {
+                        let match = true;
+                        for (let k = 0; k < 8; k++) {
+                            if (data[j+k] !== iend[k]) { match = false; break; }
+                        }
+                        if (match) { end = j + 8; break; }
+                    }
+                    if (end !== -1) {
+                        regions.push({ start: i, end: end, type: 'PNG' });
+                        i = end;
+                        continue;
+                    }
+                }
+
+                // BMP: 'BM' + размер (4 байта LE)
+                if (i + 6 < n && data[i] === 0x42 && data[i+1] === 0x4D) {
+                    const size = (data[i+2]) | (data[i+3] << 8) | (data[i+4] << 16) | (data[i+5] << 24);
+                    if (size > 0 && i + size <= n) {
+                        regions.push({ start: i, end: i + size, type: 'BMP' });
+                        i += size;
+                        continue;
+                    }
+                }
+
+                // GIF: GIF87a / GIF89a ... 0x3B
+                if (i + 6 < n) {
+                    const sig = String.fromCharCode(...data.slice(i, i+6));
+                    if (sig === 'GIF87a' || sig === 'GIF89a') {
+                        let end = -1;
+                        for (let j = i + 6; j < n; j++) {
+                            if (data[j] === 0x3B) { end = j + 1; break; }
+                        }
+                        if (end !== -1) {
+                            regions.push({ start: i, end: end, type: 'GIF' });
+                            i = end;
+                            continue;
+                        }
+                    }
+                }
+
+                i++;
+            }
+
+            // Сортируем и объединяем пересекающиеся регионы (на всякий случай)
+            regions.sort((a, b) => a.start - b.start);
+            return regions;
+        }
+
+        // ---------- Поиск различий ----------
+        function findDiffs(a, b) {
+            const diffs = [];
+            const minLen = Math.min(a.length, b.length);
+            let inDiff = false;
+            let start = 0;
+
+            for (let i = 0; i < minLen; i++) {
+                if (a[i] !== b[i]) {
+                    if (!inDiff) { start = i; inDiff = true; }
+                } else {
+                    if (inDiff) { diffs.push({ start, end: i }); inDiff = false; }
+                }
+            }
+            if (inDiff) diffs.push({ start, end: minLen });
+
+            // Разная длина файлов — тоже отличие
+            if (a.length !== b.length) {
+                diffs.push({ start: minLen, end: Math.max(a.length, b.length) });
+            }
+
+            return diffs;
+        }
+
+        // ---------- Проверка пересечения блока с регионами ----------
+        function overlaps(block, regions) {
+            for (const r of regions) {
+                if (block.start < r.end && block.end > r.start) return true;
+            }
+            return false;
+        }
+
+        // ---------- Основная функция ----------
+        async function compare() {
+            const basicFile = document.getElementById('basicFile').files[0];
+            const currentFile = document.getElementById('currentFile').files[0];
+            const out = document.getElementById('output');
+
+            if (!basicFile || !currentFile) {
+                out.textContent = 'Ошибка: выберите оба файла.';
+                return;
+            }
+
+            out.textContent = 'Чтение файлов...';
+
+            try {
+                const [basicBuf, currentBuf] = await Promise.all([
+                    basicFile.arrayBuffer(),
+                    currentFile.arrayBuffer()
+                ]);
+                const basicData = new Uint8Array(basicBuf);
+                const currentData = new Uint8Array(currentBuf);
+
+                out.textContent = `basic.img:   ${basicData.length.toLocaleString()} байт\n` +
+                                  `current.img: ${currentData.length.toLocaleString()} байт\n` +
+                                  '-'.repeat(60) + '\n';
+
+                // Ищем области изображений
+                const basicRegions = findImageRegions(basicData);
+                const currentRegions = findImageRegions(currentData);
+
+                out.textContent += `Областей изображений в basic.img:   ${basicRegions.length}\n`;
+                out.textContent += `Областей изображений в current.img: ${currentRegions.length}\n`;
+                out.textContent += '-'.repeat(60) + '\n';
+
+                // Ищем различия
+                const diffs = findDiffs(basicData, currentData);
+                const totalDiffBytes = diffs.reduce((sum, d) => sum + (d.end - d.start), 0);
+
+                out.textContent += `Всего различающихся блоков: ${diffs.length}\n`;
+                out.textContent += `Суммарно изменено байт: ${totalDiffBytes.toLocaleString()}\n`;
+                out.textContent += '-'.repeat(60) + '\n';
+
+                // Разделяем изменения
+                const imageDiffs = [];
+                const otherDiffs = [];
+
+                for (const d of diffs) {
+                    if (overlaps(d, basicRegions) || overlaps(d, currentRegions)) {
+                        imageDiffs.push(d);
+                    } else {
+                        otherDiffs.push(d);
+                    }
+                }
+
+                if (imageDiffs.length) {
+                    out.textContent += 'Изменения В ОБЛАСТЯХ ИЗОБРАЖЕНИЙ:\n';
+                    imageDiffs.forEach(d => {
+                        out.textContent += `  offset ${d.start.toString(16).padStart(8, '0')} - ` +
+                                           `${d.end.toString(16).padStart(8, '0')}  (${(d.end - d.start).toLocaleString()} байт)\n`;
+                    });
+                } else {
+                    out.textContent += 'Изменений в областях изображений не обнаружено.\n';
+                }
+
+                out.textContent += '-'.repeat(60) + '\n';
+
+                if (otherDiffs.length) {
+                    out.textContent += '!!! ВНИМАНИЕ: изменения ВНЕ областей изображений !!!\n';
+                    otherDiffs.forEach(d => {
+                        out.textContent += `  offset ${d.start.toString(16).padStart(8, '0')} - ` +
+                                           `${d.end.toString(16).padStart(8, '0')}  (${(d.end - d.start).toLocaleString()} байт)\n`;
+                    });
+                    out.textContent += '\nВЫВОД: Затронут код или другие данные. Будьте осторожны!\n';
+                    out.className = 'warning';
+                } else {
+                    out.textContent += 'ВЫВОД: Все различия находятся внутри областей изображений.\n' +
+                                       'Вероятно, изменены только картинки темы. Код, скорее всего, не тронут.\n' +
+                                       'Но это не 100% гарантия безопасности.\n';
+                    out.className = 'safe';
+                }
+
+            } catch (err) {
+                out.textContent = 'Ошибка при чтении файлов: ' + err.message;
+            }
+        }
+    </script>
+</body>
+</html>
