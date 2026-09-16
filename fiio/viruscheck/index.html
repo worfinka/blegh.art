@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMG Comparator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#1976d2;--primary-dark:#1565c0;--primary-light:#e3f2fd;
+  --success:#2e7d32;--success-light:#e8f5e9;
+  --warning:#c62828;--warning-light:#ffebee;
+  --text:#212121;--text-sec:#616161;--bg:#f5f5f5;--surface:#fff;
+  --border:#e0e0e0;--radius:8px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Roboto',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--bg);color:var(--text);min-height:100vh;
+  padding:24px 16px;font-size:14px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:960px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+h1{font-size:22px;font-weight:500;margin:0;letter-spacing:-0.2px}
+.subtitle{color:var(--text-sec);margin:0 0 24px;font-size:13px}
+.lang-switch{display:inline-flex;background:var(--surface);border-radius:999px;padding:3px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.lang-btn{border:none;background:transparent;padding:6px 14px;border-radius:999px;
+  font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;color:var(--text-sec);transition:all .2s}
+.lang-btn.active{background:var(--primary);color:#fff}
+.card{background:var(--surface);border-radius:var(--radius);
+  box-shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);
+  padding:20px;margin-bottom:16px}
+.files-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.files-grid{grid-template-columns:1fr}}
+.file-drop{border:2px dashed var(--border);border-radius:var(--radius);
+  padding:24px 16px;text-align:center;cursor:pointer;transition:all .2s;
+  display:block;background:#fafafa}
+.file-drop:hover{border-color:var(--primary);background:var(--primary-light)}
+.file-drop.has-file{border-color:var(--success);background:var(--success-light);border-style:solid}
+.file-drop input[type=file]{display:none}
+.file-label{font-size:11px;font-weight:500;color:var(--text-sec);
+  text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.file-icon{font-size:32px;display:block;margin-bottom:4px;line-height:1}
+.file-name{font-size:14px;font-weight:500;color:var(--text);margin-top:8px;word-break:break-all}
+.file-size{font-size:12px;color:var(--text-sec);margin-top:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--primary);color:#fff;border:none;border-radius:var(--radius);
+  padding:12px 24px;font-family:inherit;font-size:14px;font-weight:500;
+  letter-spacing:.3px;text-transform:uppercase;cursor:pointer;
+  box-shadow:0 2px 4px rgba(25,118,210,.3);transition:all .2s;width:100%}
+.btn:hover:not(:disabled){background:var(--primary-dark);box-shadow:0 4px 10px rgba(25,118,210,.4)}
+.btn:active:not(:disabled){transform:translateY(1px)}
+.btn:disabled{background:#bdbdbd;box-shadow:none;cursor:not-allowed}
+.progress-section{display:none;margin-top:16px}
+.progress-section.visible{display:block}
+.progress-label{display:flex;justify-content:space-between;font-size:13px;
+  color:var(--text-sec);margin-bottom:8px;gap:8px}
+.progress-bar{height:6px;background:#e0e0e0;border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:var(--primary);width:0%;
+  transition:width .15s ease-out;border-radius:3px}
+.results{display:none;margin-top:16px}
+.results.visible{display:block;animation:fadeIn .25s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.result-badge{display:flex;align-items:flex-start;gap:12px;padding:16px;
+  border-radius:var(--radius);margin-bottom:16px}
+.result-badge.success{background:var(--success-light);color:var(--success)}
+.result-badge.warning{background:var(--warning-light);color:var(--warning)}
+.result-icon{font-size:24px;line-height:1;flex-shrink:0}
+.result-title{font-weight:500;font-size:15px;margin:0 0 4px}
+.result-desc{margin:0;font-size:13px;opacity:.85}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:12px;margin-bottom:16px}
+.stat{background:#fafafa;border-radius:var(--radius);padding:12px}
+.stat-label{font-size:11px;color:var(--text-sec);text-transform:uppercase;
+  letter-spacing:.5px;margin-bottom:4px}
+.stat-value{font-size:16px;font-weight:500;color:var(--text)}
+details{background:#fafafa;border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+details summary{padding:12px 16px;cursor:pointer;font-weight:500;font-size:13px;
+  user-select:none;list-style:none;display:flex;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:'▸';display:inline-block;margin-right:10px;
+  transition:transform .2s;color:var(--text-sec)}
+details[open] summary::before{transform:rotate(90deg)}
+details .details-content{padding:0 16px 12px;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  font-size:12px;color:var(--text-sec);max-height:280px;overflow-y:auto}
+.details-line{padding:2px 0;word-break:break-all}
+.details-line.image{color:var(--success)}
+.details-line.code{color:var(--warning)}
+.note{font-size:12px;color:var(--text-sec);margin-top:8px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1 data-i18n="title">Сравнение .img файлов</h1>
+    <div class="lang-switch" role="tablist">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+  <p class="subtitle" data-i18n="subtitle">Файлы обрабатываются локально в браузере и никуда не загружаются.</p>
+
+  <div class="card">
+    <div class="files-grid">
+      <label class="file-drop" id="basicDrop">
+        <input type="file" id="basicFile">
+        <div class="file-label" data-i18n="basicLabel">Оригинальный (basic.img)</div>
+        <span class="file-icon">📁</span>
+        <div class="file-name" id="basicName">—</div>
+        <div class="file-size" id="basicSize"></div>
+      </label>
+      <label class="file-drop" id="currentDrop">
+        <input type="file" id="currentFile">
+        <div class="file-label" data-i18n="currentLabel">Проверяемый (current.img)</div>
+        <span class="file-icon">📁</span>
+        <div class="file-name" id="currentName">—</div>
+        <div class="file-size" id="currentSize"></div>
+      </label>
+    </div>
+  </div>
+
+  <button class="btn" id="compareBtn" disabled>
+    <span data-i18n="compare">Сравнить</span>
+  </button>
+
+  <div class="progress-section" id="progressSection">
+    <div class="progress-label">
+      <span id="progressText" data-i18n="preparing">Подготовка...</span>
+      <span id="progressPercent">0%</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <div class="results" id="results">
+    <div id="resultBadge"></div>
+    <div class="stats-grid" id="statsGrid"></div>
+    <div id="detailsContainer"></div>
+    <p class="note" data-i18n="successNote"></p>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+/* ---------------- i18n ---------------- */
+const I18N = {
+  ru: {
+    title: 'Сравнение .img файлов',
+    subtitle: 'Файлы обрабатываются локально в браузере и никуда не загружаются.',
+    basicLabel: 'Оригинальный (basic.img)',
+    currentLabel: 'Проверяемый (current.img)',
+    noFile: 'Файл не выбран',
+    compare: 'Сравнить',
+    preparing: 'Подготовка...',
+    readingBasic: 'Чтение basic.img...',
+    readingCurrent: 'Чтение current.img...',
+    scanningRegions: 'Поиск областей изображений...',
+    comparing: 'Сравнение байтов...',
+    analyzing: 'Анализ различий...',
+    done: 'Готово',
+    successTitle: 'Код не тронут',
+    successDesc: 'Все различия находятся внутри областей изображений. Вероятно, изменены только картинки темы.',
+    warningTitle: 'Затронут код или другие данные',
+    warningDesc: 'Обнаружены изменения вне областей изображений. Будьте осторожны!',
+    successNote: 'Это эвристика и не даёт 100% гарантии безопасности. Для файлов из ненадёжных источников используйте дополнительную проверку.',
+    fileSize: 'Размер файла',
+    imgRegions: 'Найдено изображений',
+    diffImageBytes: 'Изменено в изображениях',
+    diffCodeBytes: 'Изменено вне изображений',
+    detailsImages: 'Изменения в областях изображений',
+    detailsCode: 'Изменения вне областей изображений',
+    errorNoFiles: 'Выберите оба файла.',
+    errorRead: 'Ошибка при чтении файлов'
+  },
+  en: {
+    title: 'Compare .img files',
+    subtitle: 'Files are processed locally in your browser and never uploaded.',
+    basicLabel: 'Original (basic.img)',
+    currentLabel: 'To check (current.img)',
+    noFile: 'No file selected',
+    compare: 'Compare',
+    preparing: 'Preparing...',
+    readingBasic: 'Reading basic.img...',
+    readingCurrent: 'Reading current.img...',
+    scanningRegions: 'Scanning image regions...',
+    comparing: 'Comparing bytes...',
+    analyzing: 'Analyzing differences...',
+    done: 'Done',
+    successTitle: 'Code untouched',
+    successDesc: 'All differences fall inside image regions. Likely only theme pictures were changed.',
+    warningTitle: 'Code or other data was modified',
+    warningDesc: 'Changes were detected outside image regions. Be careful!',
+    successNote: 'This is a heuristic and is not a 100% security guarantee. Use additional checks for untrusted sources.',
+    fileSize: 'File size',
+    imgRegions: 'Images found',
+    diffImageBytes: 'Changed inside images',
+    diffCodeBytes: 'Changed outside images',
+    detailsImages: 'Changes inside image regions',
+    detailsCode: 'Changes outside image regions',
+    errorNoFiles: 'Please select both files.',
+    errorRead: 'Error reading files'
+  }
+};
+
+let currentLang = 'ru';
+const files = { basic: null, current: null };
+
+/* ---------------- Helpers ---------------- */
+function t(key) { return I18N[currentLang][key] || key; }
+
+function formatBytes(n) {
+  if (!Number.isFinite(n) || n < 0) return '—';
+  if (n < 1024) return n + ' B';
+  if (n < 1024 * 1024) return (n / 1024).toFixed(1) + ' KB';
+  if (n < 1024 * 1024 * 1024) return (n / 1024 / 1024).toFixed(2) + ' MB';
+  return (n / 1024 / 1024 / 1024).toFixed(2) + ' GB';
+}
+
+function hex8(n) { return '0x' + n.toString(16).padStart(8, '0'); }
+
+/* ---------------- Image region detection ---------------- */
+/**
+ * Ищет в бинарных данных области с картинками по их сигнатурам.
+ * Поддерживаются: JPEG, PNG, BMP, WEBP.
+ * Возвращает массив { start, end, type } — end исключая.
+ */
+function findImageRegions(data) {
+  const regions = [];
+  const n = data.length;
+  const MIN_SIZE = 256; // отсекаем ложные срабатывания
+  let i = 0;
+
+  while (i < n - 4) {
+    // JPEG: FF D8 FF ... FF D9
+    if (data[i] === 0xFF && data[i+1] === 0xD8 && data[i+2] === 0xFF) {
+      let end = -1;
+      for (let j = i + 2; j < n - 1; j++) {
+        if (data[j] === 0xFF && data[j+1] === 0xD9) { end = j + 2; break; }
+      }
+      if (end !== -1 && end - i >= MIN_SIZE) {
+        regions.push({ start: i, end, type: 'JPEG' });
+        i = end;
+        continue;
+      }
+    }
+
+    // PNG: 89 50 4E 47 0D 0A 1A 0A ... IEND AE 42 60 82
+    if (i + 8 <= n &&
+        data[i] === 0x89 && data[i+1] === 0x50 && data[i+2] === 0x4E && data[i+3] === 0x47 &&
+        data[i+4] === 0x0D && data[i+5] === 0x0A && data[i+6] === 0x1A && data[i+7] === 0x0A) {
+      const iend = [0x49,0x45,0x4E,0x44,0xAE,0x42,0x60,0x82];
+      let end = -1;
+      for (let j = i + 8; j <= n - 8; j++) {
+        let ok = true;
+        for (let k = 0; k < 8; k++) {
+          if (data[j+k] !== iend[k]) { ok = false; break; }
+        }
+        if (ok) { end = j + 8; break; }
+      }
+      if (end !== -1 && end - i >= MIN_SIZE) {
+        regions.push({ start: i, end, type: 'PNG' });
+        i = end;
+        continue;
+      }
+    }
+
+    // BMP: 'BM' + 4-байтовый размер файла (LE)
+    if (data[i] === 0x42 && data[i+1] === 0x4D && i + 6 <= n) {
+      const size = data[i+2] | (data[i+3] << 8) | (data[i+4] << 16) | (data[i+5] << 24);
+      if (size >= MIN_SIZE && i + size <= n) {
+        regions.push({ start: i, end: i + size, type: 'BMP' });
+        i += size;
+        continue;
+      }
+    }
+
+    // WEBP: RIFF <size> WEBP
+    if (i + 12 <= n &&
+        data[i] === 0x52 && data[i+1] === 0x49 && data[i+2] === 0x46 && data[i+3] === 0x46 &&
+        data[i+8] === 0x57 && data[i+9] === 0x45 && data[i+10] === 0x42 && data[i+11] === 0x50) {
+      const size = data[i+4] | (data[i+5] << 8) | (data[i+6] << 16) | (data[i+7] << 24);
+      const end = i + 8 + size;
+      if (size >= MIN_SIZE && end <= n) {
+        regions.push({ start: i, end, type: 'WEBP' });
+        i = end;
+        continue;
+      }
+    }
+
+    i++;
+  }
+  return regions;
+}
+
+function mergeRegions(regions) {
+  if (!regions.length) return [];
+  const sorted = [...regions].sort((a, b) => a.start - b.start);
+  const out = [{ ...sorted[0] }];
+  for (let i = 1; i < sorted.length; i++) {
+    const last = out[out.length - 1];
+    const cur = sorted[i];
+    if (cur.start <= last.end) {
+      if (cur.end > last.end) last.end = cur.end;
+    } else {
+      out.push({ ...cur });
+    }
+  }
+  return out;
+}
+
+/* ---------------- Diff & classification ---------------- */
+async function findDiffsWithProgress(a, b, startPct, endPct, onTick) {
+  const diffs = [];
+  const minLen = Math.min(a.length, b.length);
+  const maxLen = Math.max(a.length, b.length);
+  const span = endPct - startPct;
+  const CHUNK = 1 << 20; // 1 MB
+  let inDiff = false;
+  let start = 0;
+
+  for (let i = 0; i < minLen; i++) {
+    if (a[i] !== b[i]) {
+      if (!inDiff) { start = i; inDiff = true; }
+    } else if (inDiff) {
+      diffs.push({ start, end: i });
+      inDiff = false;
+    }
+    if (i > 0 && (i & (CHUNK - 1)) === 0) {
+      onTick(startPct + (i / minLen) * span);
+      await new Promise(r => setTimeout(r, 0));
+    }
+  }
+  if (inDiff) diffs.push({ start, end: minLen });
+  if (a.length !== b.length) diffs.push({ start: minLen, end: maxLen });
+
+  onTick(endPct);
+  return diffs;
+}
+
+/**
+ * Разбивает блоки различий на те, что внутри областей изображений,
+ * и те, что вне их. Байты на границе разделяются точно.
+ */
+function classifyDiffs(diffs, regions) {
+  const imageBlocks = [];
+  const otherBlocks = [];
+
+  for (const d of diffs) {
+    let cursor = d.start;
+    for (const r of regions) {
+      if (r.end <= cursor) continue;
+      if (r.start >= d.end) break;
+      const insideStart = Math.max(r.start, cursor);
+      const insideEnd = Math.min(r.end, d.end);
+      if (insideStart > cursor) otherBlocks.push({ start: cursor, end: insideStart });
+      if (insideEnd > insideStart) imageBlocks.push({ start: insideStart, end: insideEnd });
+      cursor = Math.max(cursor, insideEnd);
+      if (cursor >= d.end) break;
+    }
+    if (cursor < d.end) otherBlocks.push({ start: cursor, end: d.end });
+  }
+  return { imageBlocks, otherBlocks };
+}
+
+/* ---------------- UI: files & i18n ---------------- */
+function updateFileDisplay(which) {
+  const f = files[which];
+  const nameEl = document.getElementById(which + 'Name');
+  const sizeEl = document.getElementById(which + 'Size');
+  const dropEl = document.getElementById(which + 'Drop');
+
+  if (f) {
+    nameEl.textContent = f.name;
+    sizeEl.textContent = formatBytes(f.size);
+    dropEl.classList.add('has-file');
+  } else {
+    nameEl.textContent = t('noFile');
+    sizeEl.textContent = '';
+    dropEl.classList.remove('has-file');
+  }
+  document.getElementById('compareBtn').disabled = !(files.basic && files.current);
+}
+
+function applyLang() {
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if (I18N[currentLang][k]) el.textContent = I18N[currentLang][k];
+  });
+  updateFileDisplay('basic');
+  updateFileDisplay('current');
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.dataset.lang === currentLang) return;
+    currentLang = btn.dataset.lang;
+    document.querySelectorAll('.lang-btn').forEach(b =>
+      b.classList.toggle('active', b === btn));
+    applyLang();
+  });
+});
+
+document.getElementById('basicFile').addEventListener('change', e => {
+  files.basic = e.target.files[0] || null;
+  updateFileDisplay('basic');
+  document.getElementById('results').classList.remove('visible');
+});
+document.getElementById('currentFile').addEventListener('change', e => {
+  files.current = e.target.files[0] || null;
+  updateFileDisplay('current');
+  document.getElementById('results').classList.remove('visible');
+});
+
+/* ---------------- Progress ---------------- */
+const progressFill = document.getElementById('progressFill');
+const progressText = document.getElementById('progressText');
+const progressPercent = document.getElementById('progressPercent');
+
+function setProgress(pct, text) {
+  const p = Math.max(0, Math.min(100, pct));
+  progressFill.style.width = p + '%';
+  progressPercent.textContent = Math.round(p) + '%';
+  if (text) progressText.textContent = text;
+}
+
+/* ---------------- File reading with progress ---------------- */
+function readFileWithProgress(file, startPct, endPct, labelKey) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onprogress = e => {
+      if (e.lengthComputable) {
+        const pct = startPct + (e.loaded / e.total) * (endPct - startPct);
+        setProgress(pct, t(labelKey));
+      }
+    };
+    reader.onload = () => {
+      setProgress(endPct, t(labelKey));
+      resolve(new Uint8Array(reader.result));
+    };
+    reader.onerror = () => reject(reader.error);
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+/* ---------------- Results rendering ---------------- */
+function showResults(basicData, currentData, basicRegions, currentRegions, imageBlocks, otherBlocks) {
+  const results = document.getElementById('results');
+  results.classList.add('visible');
+
+  const hasCodeChanges = otherBlocks.length > 0;
+  const badge = document.getElementById('resultBadge');
+
+  if (hasCodeChanges) {
+    badge.innerHTML =
+      '<div class="result-badge warning">' +
+        '<div class="result-icon">⚠️</div>' +
+        '<div>' +
+          '<p class="result-title">' + t('warningTitle') + '</p>' +
+          '<p class="result-desc">' + t('warningDesc') + '</p>' +
+        '</div>' +
+      '</div>';
+  } else {
+    badge.innerHTML =
+      '<div class="result-badge success">' +
+        '<div class="result-icon">✓</div>' +
+        '<div>' +
+          '<p class="result-title">' + t('successTitle') + '</p>' +
+          '<p class="result-desc">' + t('successDesc') + '</p>' +
+        '</div>' +
+      '</div>';
+  }
+
+  const totalImageBytes = imageBlocks.reduce((s, b) => s + (b.end - b.start), 0);
+  const totalOtherBytes = otherBlocks.reduce((s, b) => s + (b.end - b.start), 0);
+
+  document.getElementById('statsGrid').innerHTML =
+    '<div class="stat"><div class="stat-label">' + t('fileSize') + ' basic.img</div>' +
+      '<div class="stat-value">' + formatBytes(basicData.length) + '</div></div>' +
+    '<div class="stat"><div class="stat-label">' + t('fileSize') + ' current.img</div>' +
+      '<div class="stat-value">' + formatBytes(currentData.length) + '</div></div>' +
+    '<div class="stat"><div class="stat-label">' + t('imgRegions') + '</div>' +
+      '<div class="stat-value">' + (basicRegions.length + currentRegions.length) + '</div></div>' +
+    '<div class="stat"><div class="stat-label">' + t('diffImageBytes') + '</div>' +
+      '<div class="stat-value">' + formatBytes(totalImageBytes) + '</div></div>' +
+    '<div class="stat"><div class="stat-label">' + t('diffCodeBytes') + '</div>' +
+      '<div class="stat-value">' + formatBytes(totalOtherBytes) + '</div></div>';
+
+  let html = '';
+  if (imageBlocks.length) {
+    html +=
+      '<details>' +
+        '<summary>' + t('detailsImages') + ' (' + imageBlocks.length + ')</summary>' +
+        '<div class="details-content">' +
+          imageBlocks.map(b =>
+            '<div class="details-line image">' + hex8(b.start) + ' – ' + hex8(b.end) +
+            ' · ' + formatBytes(b.end - b.start) + '</div>').join('') +
+        '</div>' +
+      '</details>';
+  }
+  if (otherBlocks.length) {
+    html +=
+      '<details open>' +
+        '<summary>' + t('detailsCode') + ' (' + otherBlocks.length + ')</summary>' +
+        '<div class="details-content">' +
+          otherBlocks.map(b =>
+            '<div class="details-line code">' + hex8(b.start) + ' – ' + hex8(b.end) +
+            ' · ' + formatBytes(b.end - b.start) + '</div>').join('') +
+        '</div>' +
+      '</details>';
+  }
+  document.getElementById('detailsContainer').innerHTML = html;
+}
+
+/* ---------------- Main flow ---------------- */
+async function runCompare() {
+  if (!files.basic || !files.current) {
+    alert(t('errorNoFiles'));
+    return;
+  }
+
+  const btn = document.getElementById('compareBtn');
+  btn.disabled = true;
+  document.getElementById('results').classList.remove('visible');
+  document.getElementById('progressSection').classList.add('visible');
+  setProgress(0, t('preparing'));
+
+  try {
+    // 0–15% — чтение basic
+    const basicData = await readFileWithProgress(files.basic, 0, 15, 'readingBasic');
+    // 15–30% — чтение current
+    const currentData = await readFileWithProgress(files.current, 15, 30, 'readingCurrent');
+
+    // 30–35% — поиск областей изображений
+    setProgress(32, t('scanningRegions'));
+    await new Promise(r => setTimeout(r, 0));
+    const basicRegions = findImageRegions(basicData);
+    const currentRegions = findImageRegions(currentData);
+    const allRegions = mergeRegions(basicRegions.concat(currentRegions));
+    setProgress(35, t('scanningRegions'));
+
+    // 35–90% — побайтовое сравнение
+    const diffs = await findDiffsWithProgress(basicData, currentData, 35, 90,
+      p => setProgress(p, t('comparing')));
+
+    // 90–100% — классификация
+    setProgress(92, t('analyzing'));
+    await new Promise(r => setTimeout(r, 0));
+    const { imageBlocks, otherBlocks } = classifyDiffs(diffs, allRegions);
+
+    setProgress(100, t('done'));
+    await new Promise(r => setTimeout(r, 350));
+
+    showResults(basicData, currentData, basicRegions, currentRegions, imageBlocks, otherBlocks);
+  } catch (err) {
+    console.error(err);
+    progressText.textContent = t('errorRead') + ': ' + (err && err.message ? err.message : err);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById('compareBtn').addEventListener('click', runCompare);
+
+/* ---------------- Init ---------------- */
+applyLang();
+</script>
+</body>
+</html>
